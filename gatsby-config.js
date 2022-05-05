@@ -1,6 +1,6 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: `Xing Kuangyi`,
     siteTitleAlt: `Xing Kuangyi's portfolio site`,
     siteHeadline: `Xing Kuangyi's portfolio site`,
-    siteUrl: `https://cara.lekoarts.de`,
+    siteUrl: `https://xingkuangyi.gatsbyjs.io/`,
     siteDescription: `Portfolio website for Xing Kuangyi`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
@@ -58,4 +58,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
