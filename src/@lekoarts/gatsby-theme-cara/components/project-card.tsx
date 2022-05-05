@@ -1,16 +1,24 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Badge } from 'styled-badge-component';
+import { jsx } from "theme-ui";
+import { Badge } from "styled-badge-component";
 
 type ProjectCardProps = {
-  link: string
-  title: string,
-  status: string,
-  children: React.ReactNode
-  bg: string
-}
+  link: string;
+  title: string;
+  status: string;
+  children: React.ReactNode;
+  bg: string;
+  keywords: string[];
+};
 
-const ProjectCard = ({ link, title, status, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({
+  link,
+  title,
+  status,
+  children,
+  bg,
+  keywords,
+}: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -33,12 +41,20 @@ const ProjectCard = ({ link, title, status, children, bg }: ProjectCardProps) =>
       },
     }}
   >
-    <div sx={{ margin: `-20px 0px 30px 0px`}}>
-      {
-        status === "In progress" ? <Badge pill warning>{status}</Badge> : <Badge pill success>{status}</Badge>
-      }
+    <div sx={{ margin: `-20px 0px 30px 0px` }}>
+      {status === "In progress" ? (
+        <Badge pill warning>
+          {status}
+        </Badge>
+      ) : (
+        <Badge pill success>
+          {status}
+        </Badge>
+      )}
     </div>
-    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
+    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
+      {children}
+    </div>
     <div
       sx={{
         letterSpacing: `wide`,
@@ -50,7 +66,21 @@ const ProjectCard = ({ link, title, status, children, bg }: ProjectCardProps) =>
     >
       {title}
     </div>
+    <div
+      sx={{
+        marginTop: `30px`,
+        marginBottom: `-20px`,
+        display: `flex`,
+        gap: `10px`,
+      }}
+    >
+      {keywords.map((keyword, index) => (
+        <Badge pill light key={index}>
+          {keyword}
+        </Badge>
+      ))}
+    </div>
   </a>
-)
+);
 
-export default ProjectCard
+export default ProjectCard;
