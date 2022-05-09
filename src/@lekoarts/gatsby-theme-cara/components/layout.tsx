@@ -1,9 +1,9 @@
-import * as React from "react"
-import { get } from "theme-ui"
-import { Global } from "@emotion/react"
-import SEO from "./seo"
+import * as React from "react";
+import { get } from "theme-ui";
+import { Global } from "@emotion/react";
+import SEO from "./seo";
 
-type LayoutProps = { children: React.ReactNode; className?: string }
+type LayoutProps = { children: React.ReactNode; className?: string };
 
 const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
@@ -27,6 +27,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           borderRadius: `20px`,
           maxWidth: `100%`,
           maxHeight: `100%`,
+          height: `auto`,
         },
         pre: {
           fontFamily: `monospace`,
@@ -44,6 +45,6 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <SEO />
     <main className={className}>{children}</main>
   </React.Fragment>
-)
+);
 
-export default Layout
+export default Layout;

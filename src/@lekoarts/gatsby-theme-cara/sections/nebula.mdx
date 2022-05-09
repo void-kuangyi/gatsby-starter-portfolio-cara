@@ -1,42 +1,146 @@
+import Gap from "../elements/gap.tsx";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 # Nebula
 
-##### A haptic wayfinding for the visually impaired
+<div style="margin-top: 20px">
+  <h5>A haptic wayfinding for the visually impaired</h5>
+</div>
 
-<img src={"../../../nebula.jpg"} />
+<Gap margin={400} />
 
-Travelling and exploring unfamiliar places is an exciting experience for most sighted people. However, for the visually impaired and blind people, this experience is often more frustrating and mentally demanding than enjoyable. They rely on tools informing them about their immediate surroundings and the other senses to grasp their environment. Nebula is an interactive belt that supports unfamiliar urban exploration for people with visual impairment. The belt translates navigational data into haptic sensation, allowing users to explore without constantly figuring out where they are going or from where they come. Nebula minimises the fear of getting lost and relieves mental strain by creating a haptic breadcrumb trail to ensure the wearer always gets home. Nebula encourages exploration while allowing the wearer to immerse in the experience and enjoy the journey.
+<div style="display: flex">
 
-The World Health Organisation estimates that 253 million people worldwide suffer from visual impairment, of whom about 36 million are completely blind, and about 217 million suffer from moderate to severe visual impairment (Bourne et al., 2017, as cited in Qiao et al., 2021). In the Netherlands, the number of visually impaired may increase by 18% to 367,000 in 2020 (Limburg & Keunen, 2009). Although visually impaired people undergo special training to learn specific navigation and orientation techniques and strategies, it has been observed that 30 % of them never leave their homes alone. Moreover, only a fraction of blind people travel independently to unknown places (Balata et al., 2015). Visual impairment primarily restricts a person’s mobility, which significantly reduces visually impaired people’s travel-related activities (Golledge et al, as cited in Balata et al., 2015), leaving a big gap for the tourism industry. On the contrary, a survey conducted in China shows that more than 60% of disabled people have a strong desire to travel, and the proportion of disabled people who have a desire to travel is increasing (Liu, 2016, as cited in Qiao et al., 2021).
+<div>
+  <img src={"../../../nebula.jpg"} />
+</div> 
+<div style="flex-basis:100%; margin-left: 40px">
+    <h5>Abstract</h5>
+    Travelling and exploring unfamiliar places is an exciting experience for most sighted people. However, for the visually impaired and blind people, this experience is often more frustrating and mentally demanding than enjoyable. They rely on tools informing them about their immediate surroundings and the other senses to grasp their environment. Nebula is an interactive belt that supports unfamiliar urban exploration for people with visual impairment. The belt translates navigational data into haptic sensation, allowing users to explore without constantly figuring out where they are going or from where they come. Nebula minimises the fear of getting lost and relieves mental strain by creating a haptic breadcrumb trail to ensure the wearer always gets home. Nebula encourages exploration while allowing the wearer to immerse in the experience and enjoy the journey.
+  </div>
+</div>
 
-For travellers, the ultimate value of travelling is to obtain emotional enjoyment and delight from travel experiences (Hosany et al., 2020, as cited in Qiao et al., 2021). When walking in unfamiliar cities, visually impaired people have to constantly build a mental map of where they come from and where to go. The fear of getting lost restrains them from immersing in the surroundings and enjoying the experience. When travelling is more mentally demanding than positive emotional enjoyment and delight, they stop going on adventures even with the desire for exploration.
+<Gap margin={100} />
 
+<div>
+  The World Health Organisation estimates that 253 million people worldwide
+  suffer from visual impairment, of whom about 36 million are completely blind,
+  and about 217 million suffer from moderate to severe visual impairment (Bourne
+  et al., 2017, as cited in Qiao et al., 2021). In the Netherlands, the number
+  of visually impaired may increase by 18% to 367,000 in 2020 (Limburg & Keunen,
+  2009). Although visually impaired people undergo special training to learn
+  specific navigation and orientation techniques and strategies, it has been
+  observed that 30 % of them never leave their homes alone. Moreover, only a
+  fraction of blind people travel independently to unknown places (Balata et
+  al., 2015). Visual impairment primarily restricts a person’s mobility, which
+  significantly reduces visually impaired people’s travel-related activities
+  (Golledge et al, as cited in Balata et al., 2015), leaving a big gap for the
+  tourism industry. On the contrary, a survey conducted in China shows that more
+  than 60% of disabled people have a strong desire to travel, and the proportion
+  of disabled people who have a desire to travel is increasing (Liu, 2016, as
+  cited in Qiao et al., 2021).
+</div>
+<Gap margin={20} />
+<div>
+  For travellers, the ultimate value of travelling is to obtain emotional
+  enjoyment and delight from travel experiences (Hosany et al., 2020, as cited
+  in Qiao et al., 2021). When walking in unfamiliar cities, visually impaired
+  people have to constantly build a mental map of where they come from and where
+  to go. The fear of getting lost restrains them from immersing in the
+  surroundings and enjoying the experience. When travelling is more mentally
+  demanding than positive emotional enjoyment and delight, they stop going on
+  adventures even with the desire for exploration.
+</div>
+
+<Gap margin={100} />
+
+<div style="display: flex; gap:40px;">
+  <div>
 <img src={"../../../nebula-design-process.jpg"} />
+</div>
 
+<div style="flex-basis:100%;">
 We conducted comprehensive user interviews and focus group interviews, ideated various solutions, explored different materials and technologies, implemented two iterations of the design, showroomed the prototypes and conducted user testings to develop Nebula.
+</div>
+</div>
 
-<img src="../../../nebula-closeup1.jpg" />
-<img src="../../../nebula-closeup2.jpg" />
+<Gap margin={200} />
 
-By creating Nebula, we want to promote the inclusiveness of society by helping people with impaired vision and increasing the market volume of the tourism industry from filling the gap for the visually impaired. The ability to explore the neighbourhood independently and to travel to the desired destination is needed for a satisfactory level of quality of life and self-confidence (Balata et al., 2015). Therefore, last but not the least, we hope to improve the travelling sentiment of visually impaired and blind individuals and assist them in exploring and travelling outside their comfort zone, and eventually boost their quality of life and confidence.
+<AliceCarousel
+  animationDuration="2000"
+  infinite
+  controlsStrategy="alternate"
+  autoPlay
+  mouseTracking
+  disableButtonsControls
+  items={[
+    <img
+      src="../../../nebula-closeup1.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../nebula-closeup2.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+  ]}
+/>
+<Gap margin={100} />
+<div>
+  By creating Nebula, we want to promote the inclusiveness of society by helping
+  people with impaired vision and increasing the market volume of the tourism
+  industry from filling the gap for the visually impaired. The ability to
+  explore the neighbourhood independently and to travel to the desired
+  destination is needed for a satisfactory level of quality of life and
+  self-confidence (Balata et al., 2015). Therefore, last but not the least, we
+  hope to improve the travelling sentiment of visually impaired and blind
+  individuals and assist them in exploring and travelling outside their comfort
+  zone, and eventually boost their quality of life and confidence.
+</div>
+<Gap margin={200} />
+<div style="display:flex; align-items:baseline; gap:20px">
+  <div>
+    <img src="../../../nebula-demo.jpeg" />
+  </div>
+  <div>
+    <img src="../../../nebula-demo2.jpeg" />
+  </div>
 
-<img src="../../../nebula-demo.jpeg" />
-<img src="../../../nebula-demo2.jpeg" />
-<img src="../../../nebula-versions.jpeg" />
+</div>
+<Gap margin={100} />
+<div>
+  <img src="../../../nebula-versions.jpeg" />
+</div>
 
-<video controls>
-  <source
-    src={
-      "https://vimeo.com/665646886?embedded=true&source=vimeo_logo&owner=130997299#at=0"
-    }
-  />
-</video>
+<Gap margin={400} />
 
 ---
 
-###### References:
+##### References:
 
-Qiao, G., Zhang, J., Pabel, A., & Chen, N. (2021). Understanding the Factors Influencing the Leisure Tourism Behavior of Visually Impaired Travelers: An Empirical Study in China. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.684285
-
-Balata, J., Mikovec, Z., & Maly, I. (2015). Navigation Problems in Blind-to-Blind Pedestrians Tele-assistance Navigation. Human-Computer Interaction – INTERACT 2015, 89–109. https://doi.org/10.1007/978-3-319-22701-6_8
-
-Limburg, H., & Keunen, J. E. (2009). Blindness and low vision in The Netherlands from 2000 to 2020—modeling as a tool for focused intervention. Ophthalmic Epidemiology, 16(6), 362–369. https://doi.org/10.3109/09286580903312251
+<div>
+  Qiao, G., Zhang, J., Pabel, A., & Chen, N. (2021). Understanding the Factors
+  Influencing the Leisure Tourism Behavior of Visually Impaired Travelers: An
+  Empirical Study in China. Frontiers in Psychology, 12.
+  https://doi.org/10.3389/fpsyg.2021.684285
+</div>
+<br />
+<div>
+  Balata, J., Mikovec, Z., & Maly, I. (2015). Navigation Problems in
+  Blind-to-Blind Pedestrians Tele-assistance Navigation. Human-Computer
+  Interaction – INTERACT 2015, 89–109.
+  https://doi.org/10.1007/978-3-319-22701-6_8
+</div>
+<br />
+<div>
+  Limburg, H., & Keunen, J. E. (2009). Blindness and low vision in The
+  Netherlands from 2000 to 2020—modeling as a tool for focused intervention.
+  Ophthalmic Epidemiology, 16(6), 362–369.
+  https://doi.org/10.3109/09286580903312251
+</div>

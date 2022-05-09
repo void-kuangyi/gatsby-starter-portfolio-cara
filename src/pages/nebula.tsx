@@ -5,8 +5,8 @@ import NebulaContent from "../@lekoarts/gatsby-theme-cara/components/nebula";
 
 const Nebula = () => (
   <Layout>
-    <Parallax pages={8}>
-      <NebulaContent offset={0} factor={8} />
+    <Parallax pages={6}>
+      <NebulaContent offset={0.8} factor={6} />
     </Parallax>
   </Layout>
 );
