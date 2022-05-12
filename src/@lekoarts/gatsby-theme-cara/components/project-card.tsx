@@ -71,6 +71,7 @@ const ProjectCard = ({
         marginTop: `30px`,
         marginBottom: `-20px`,
         display: `flex`,
+        flexWrap: `wrap`,
         gap: `10px`,
       }}
     >
