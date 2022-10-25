@@ -9,6 +9,7 @@ type ProjectCardProps = {
   children: React.ReactNode;
   bg: string;
   keywords: string[];
+  textColor?: string;
 };
 
 const ProjectCard = ({
@@ -18,6 +19,7 @@ const ProjectCard = ({
   children,
   bg,
   keywords,
+  textColor,
 }: ProjectCardProps) => (
   <a
     href={link}
@@ -31,11 +33,12 @@ const ProjectCard = ({
       borderRadius: `lg`,
       px: 4,
       py: [4, 5],
-      color: `white`,
+      color: textColor || `white`,
       background: bg || `none`,
+      backgroundSize: `cover`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
-        color: `white !important`,
+        color: textColor || `white !important`,
         transform: `translateY(-5px)`,
         boxShadow: `xl`,
       },

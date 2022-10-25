@@ -7,17 +7,14 @@ import Footer from "./footer";
 // @ts-ignore
 import ContactMDX from "../sections/contact";
 
-const Contact = ({
-  offset,
-  factor = 1,
-}: {
-  offset: number;
-  factor?: number;
-}) => (
+const Contact = () => (
   <div>
+    <Inner>
+      <ContactMDX />
+    </Inner>
+    <Footer />
     <div
       sx={{
-        position: `absolute`,
         bottom: 0,
         width: `full`,
         transform: `matrix(1, 0, 0, -1, 0, 0)`,
@@ -48,10 +45,7 @@ const Contact = ({
         </svg>
       </div>
     </div>
-    <Inner>
-      <ContactMDX />
-    </Inner>
-    <Footer />
+
     <UpDown>
       <Svg
         icon="upDown"

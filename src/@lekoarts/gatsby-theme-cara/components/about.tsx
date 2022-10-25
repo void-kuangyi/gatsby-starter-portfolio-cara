@@ -5,7 +5,7 @@ import { UpDown, UpDownWide } from "../styles/animations";
 // @ts-ignore
 import AboutMDX from "../sections/about";
 
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const About = () => (
   <div>
     <UpDown>
       <Svg

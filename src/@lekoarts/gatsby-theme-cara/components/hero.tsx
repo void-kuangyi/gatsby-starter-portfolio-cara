@@ -6,7 +6,7 @@ import { UpDown, UpDownWide } from "../styles/animations";
 // @ts-ignore
 import Intro from "../sections/intro";
 
-const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Hero = () => (
   <div>
     <UpDown>
       <Svg
@@ -20,7 +20,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       />
       <Svg
         icon="hexa"
-        width={48}
+        width={10}
         stroke
         color="icon_red"
         left="60%"
@@ -54,14 +54,14 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         left="30%"
         top="65%"
       />
-      <Svg
+      {/* <Svg
         icon="cross"
         width={16}
         stroke
         color="icon_pink"
         left="28%"
         top="15%"
-      />
+      /> */}
       <Svg icon="circle" width={6} color="icon_darkest" left="75%" top="10%" />
       <Svg
         icon="upDown"
@@ -103,7 +103,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     <Svg
       icon="box"
       hiddenMobile
-      width={64}
+      width={10}
       color="icon_purple"
       left="5%"
       top="90%"

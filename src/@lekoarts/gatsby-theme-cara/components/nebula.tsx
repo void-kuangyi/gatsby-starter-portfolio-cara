@@ -6,13 +6,7 @@ import { UpDown, UpDownWide } from "../styles/animations";
 // @ts-ignore
 import NebulaMDX from "../sections/nebula";
 
-const Nebula = ({
-  offset,
-  factor = 1,
-}: {
-  offset: number;
-  factor?: number;
-}) => (
+const Nebula = () => (
   <div>
     <UpDown>
       <Svg

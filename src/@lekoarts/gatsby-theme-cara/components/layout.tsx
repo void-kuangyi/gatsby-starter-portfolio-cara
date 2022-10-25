@@ -3,9 +3,9 @@ import { get } from "theme-ui";
 import { Global } from "@emotion/react";
 import SEO from "./seo";
 
-type LayoutProps = { children: React.ReactNode; className?: string };
+type LayoutProps = { children: React.ReactNode };
 
-const Layout = ({ children, className = `` }: LayoutProps) => (
+const Layout = ({ children }: LayoutProps) => (
   <React.Fragment>
     <Global
       styles={(t) => ({
@@ -17,6 +17,9 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           "&:after": {
             boxSizing: `inherit`,
           },
+        },
+        main: {
+          margin: `100px 0 0 200px`,
         },
         html: {
           fontSize: `18px`,
@@ -43,7 +46,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
       })}
     />
     <SEO />
-    <main className={className}>{children}</main>
+    <main>{children}</main>
   </React.Fragment>
 );
 

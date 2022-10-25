@@ -4,7 +4,7 @@ import NebulaContent from "../@lekoarts/gatsby-theme-cara/components/nebula";
 
 const Nebula = () => (
   <Layout>
-    <NebulaContent offset={0.8} factor={6} />
+    <NebulaContent />
   </Layout>
 );
 

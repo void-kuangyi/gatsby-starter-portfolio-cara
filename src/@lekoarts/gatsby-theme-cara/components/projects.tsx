@@ -6,13 +6,7 @@ import { UpDown, UpDownWide } from "../styles/animations";
 // @ts-ignore
 import ProjectsMDX from "../sections/projects";
 
-const Projects = ({
-  offset,
-  factor = 2,
-}: {
-  offset: number;
-  factor?: number;
-}) => (
+const Projects = () => (
   <div>
     <Inner>
       <div
