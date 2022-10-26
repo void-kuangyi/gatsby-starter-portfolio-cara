@@ -11,6 +11,7 @@ const Inner = ({ className = ``, children }: InnerProps) => (
     sx={{
       width: [`full`, `full`, `full`, `full`, `full`, `4/5`],
       textAlign: `left`,
+      position: `relative`,
     }}
     className={className}
   >
