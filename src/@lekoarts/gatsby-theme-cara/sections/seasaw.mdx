@@ -1,4 +1,7 @@
 import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -10,44 +13,50 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 <Gap margin={400} />
 
-<div style="display: flex">
-
-<div>
-  <img src={""} />
-</div> 
-<div style="flex-basis:100%; margin-left: 40px">
-    <h5>Background</h5>
-According to an earlier survey I conducted among young adults, among 77
+<Text title="Background">
+  According to an earlier survey I conducted among young adults, among 77
   responses, 3 in 10 people find cooking themselves extremely difficult when
   they first moved out family. And 92.8% people agree that “Being involved in
   the kitchen at a young age would make me loving cooking more” and 59.8%
   participants wish “my family could teach me cooking more when I was young”.
   Unable to cook themselves is a big barrier for young adults to become
   independent.
-
   <br />
   This project focuses on "How can i design playful experience to encourage
   children more involved in the kitchen, in order to prepare them for future
   independence?"
-  </div>
-</div>
+</Text>
 
-<Gap margin={100} />
+<Title>
+  <h3>Design Principles</h3>
+</Title>
 
-### Design Principles
+<Text title="Controlled Risk">
+  The current market is filled up with overly safe kitchen toys rather than
+  actual kids-safe knife because knife is generally considered dangerous and
+  should not be touched by children.
+  <br /> <br />
+  However, If children are presented with risky items with a serious functional
+  purpose, they will conduct more cautiously, conduct more experimentation, and
+  gain more confidence and independence than overly safe items. We should focus
+  on design for children "as safe as needed" rather than "as safe as possible"
+  (Brussoni et al., 2012)
+</Text>
 
-#### Controlled Risk
+<Text title="Embodied Movement">
+  Many cultures involve their whole body when cooking. For example, chinese
+  grind soybeans with the millstone, indians cook their naan with a big stove,
+  italian spread tomato paste on table to wait them dry. This project focuses on
+  engaging children in cooking with their whole body, like they are dancing with
+  the food. It also comes from the consideration that children don't have the
+  fine motor skills to control a knife yet.
+</Text>
 
-The current market is filled up with overly safe kitchen toys rather than actual kids-safe knife because knife is generally considered dangerous and should not be touched by children.
+<Title>
+  <h3>Design Process</h3>
+</Title>
 
-However, If children are presented with risky items with a serious functional purpose,
-they will conduct more cautiously, conduct more experimentation, and gain more confidence
-and independence than overly safe items. We should focus on design for children "as
-safe as needed" rather than "as safe as possible" (Brussoni et al., 2012)
-
-#### Embodied Movement
-
-### Design Process
+<hr />
 
 ##### References:
 
