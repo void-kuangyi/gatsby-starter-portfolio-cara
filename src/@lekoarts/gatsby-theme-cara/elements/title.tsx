@@ -10,6 +10,7 @@ const Title = ({ gap, children }: TitleProps) => (
   <div
     sx={{
       marginBottom: gap || `20px`,
+      marginTop: `200px`,
     }}
   >
     {children}

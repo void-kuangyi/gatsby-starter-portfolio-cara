@@ -12,7 +12,7 @@ const ImageText = ({ src, children }: ImageTextProps) => (
       display: `flex`,
     }}
   >
-    <div>
+    <div sx={{ marginRight: `40px` }}>
       <img src={src} />
     </div>
     {children}

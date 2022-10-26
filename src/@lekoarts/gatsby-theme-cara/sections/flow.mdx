@@ -1,0 +1,199 @@
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+# Flow
+
+<div style="margin-top: 20px">
+  <h5>
+    How do space-changing elements influence children's social interaction in
+    play?
+  </h5>
+</div>
+
+<Gap margin={200} />
+
+<Text title="Introduction">
+  Literature and existing frameworks create awareness about the influential
+  factors in space but never provide us solutions for how to design for a
+  specific context. In this design research project, the school playground is
+  chosen as a specific context [Tieben, 2015]
+  <br />
+  <br />
+  In addition, Play plays a very important role in children’s early life, and they
+  spent quite a lot time playing. The recess on the school playground are the main
+  context where children can freely structure their own activities and choose peers
+  with whom to interact, which forms their social transactions and peer relationships.
+  But A lot of our current playground lacks diversity and easily favor the play preferences,
+  by the amount of physical exercises they emphasise. If we want children to have
+  a wide range of possibilities about how they think about themselves and who they
+  can be, we need to provide playgrounds that enable a wide variety of play activities,
+  and which do not allow particular forms of masculinity to dominate the available
+  space. [Paechter and Clark, 2007]
+  <br />
+  <br />
+  I personally experienced exclusion on playground when i was young, just
+  because I was a girl and boys did not want to include me in their activities
+  even I wanted to. I empathise with children who are less sociable, get
+  excluded on a school playground. Even they might not want the social
+  interaction, for example, autistic children, the social interaction is still
+  vital for their cognitive, motor and emotional skill development.
+  <br />
+  <br />
+  So i developed this research project on understanding how space-changing elements
+  (sizes, layouts, visual transparency, dynamic space changing) influence children’s
+  social play in order to provide a guideline for developing inclusive playground,
+  and generate knowledge for researchers when they research in a school playground
+  context.
+</Text>
+
+<Title>
+  <h3>Final Design</h3>
+</Title>
+<ImageText src="../../../flow/design.png">
+  The design is composed with three different shapes, purple castle, blue castle
+  and orange home. All the equipment have climbing holes on the wall. Inside the
+  frame hangs multiple spinable translucent curtains.The purple castle is
+  designed to fit 5 - 6 children, the blue castle is for 3 - 4 and the orange
+  home is for 1 - 2. The number is based on children running through without
+  feeling crowded.
+</ImageText>
+
+<Gap margin={200} />
+<img src="../../../flow/children.jpg" />
+<Text>
+  The design is designed as a social interaction space with objects where
+  several children come together and social encounters and interaction can occur
+  . Simultaneously, gap spaces are distance between the child and equipment or
+  between children. Comfort spaces are spaces near architectural elements that
+  provide comfort [Tieben, 2015], in this case, are the equipment to lean
+  against and the enclosure area to observe while being “out of the way”.
+  <br />
+  <br />
+  The design supports physical play. The layouts of the design offer different running
+  routes for children. Children are supported to play chasing, tag, hide-and-seek,
+  or other common physical games. Children can climb on top of the equipment and
+  then either jump off or slide down from the top. Different heights of the design
+  develop and exercise children’s skills in a challenging situation [Korhonen et
+  al., 2009]. Children are expected to spin or push through the curtain.
+  <br />
+  <br />
+  In addition, fantasy play can also be elicited through the bright colours and
+  the shapes like castles and homes. Castle and home were reported to be the
+  most common fantasy shapes. The shape is also designed abstract because
+  playgrounds should typically avoid equipment that is too specifically
+  designed, which limits children’s imagination and a simpler structure allows
+  more room for pretend play [Fernelius and Christensen, 2017]. The design also
+  provide children a chill area under the frame, supporting relaxation,
+  unwinding or stress relief experience and calmness during play [Korhonen et
+  al., 2009].
+</Text>
+
+<Text title="Technical Details">
+  <img src="../../../flow/sketch.png" />
+  The height is based on the tallest dutch children (144cm) and the average dutch
+  children (130cm) and short dutch children (120cm). Width is based on the widest
+  waist width for 6 years and the widest waist width for 8 years. The depth is based
+  on a field trip to a playground, mea- suring common width for ladders and also
+  safety suggestions from U.S. Consumer Product Safety Commission[1986]. The hole
+  size is 8 x 6cm (width x height) based on the average foot size of 6 - 8 years
+  old in the Netherlands. The gap between each hole is less than 14cm based on and
+  measuring common tread rise and U.S. Consumer Product Safety Commission[1986].
+  <br />
+  <br />
+  The frame is made from recycled plastic, which is sustainable and also easy to
+  be mould for a fluid shape. The curtain material is translucent PVC, 40cm x
+  4mm (width x depth), based on online supplier information. The usage of PVC
+  material makes sure that children don’t get tangled with it. The curtain is
+  spinable and connected to the ceiling with ball bearings, which are strong
+  enough to hold mul- tiple children hanging on it. The smooth texture of PVC
+  also prevents children from hanging. The middle of the frame is narrowed for
+  better support. All edges are rounded for safeness.
+  <br />
+  <br />
+  The colour choices are inspired by a visit to a toy store in Eindhoven. In addition,
+  orange is generally associated with warmth, which matches the home shape. Purple
+  usually means mystery, which fits with the castle fantasy.
+</Text>
+
+<Title>
+  <h3>Design Explorations</h3>
+</Title>
+<img src="../../../flow/exploration.png" />
+<img src="../../../flow/exploration1.png" />
+
+<Title>
+  <h3>Physical demonstrator</h3>
+</Title>
+<AliceCarousel
+  animationDuration="2000"
+  infinite
+  controlsStrategy="alternate"
+  autoPlay
+  mouseTracking
+  disableButtonsControls
+  items={[
+    <img
+      src="../../../flow/demo1.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../flow/demo2.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../flow/demo3.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../flow/demo4.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+  ]}
+/>
+<Title>
+  <h3>Methods</h3>
+</Title>
+<Text>
+  The study was conducted with expert interviews, combined with co-constructing
+  stories. The expert interview provides exclusive insights into comprehensive
+  knowledge about 6 - 8 years old children quickly and easily [Monke, 2021].
+  Expert 1 is a retired primary school teacher with a permanent teaching
+  position for 35 years. Expert 2 is a child therapist and currently has three 6
+  - 8 years clients. Expert 3 is a primary school teacher 5 years of teaching
+  experience. Expert 4 is a parent for a 7 year old son. Expert 5 is a primary
+  school teacher with 32 years of teaching experience.
+  <br />
+  <br />
+  Co-constructing consists of two phases: sensitisation and elaboration. The sensitisation
+  phase aims to make participants think about their past experiences. In this case,
+  experts were asked about their past experience with 6 - 8 years old and the observation
+  of children’s play patterns so that in the elaboration phase the experts can better
+  envision the scenarios with the design. The second phase starts with introducing
+  the design in an envisaged context. [Participatory Design Conference et al., 2012].
+  Interview were recorded, transcribed and analysed with hybrid deductive and inductive
+  coding.
+</Text>
+
+<Title>
+  <h3>Results</h3>
+</Title>
+
+<Text title="size">
+
+</Text>
