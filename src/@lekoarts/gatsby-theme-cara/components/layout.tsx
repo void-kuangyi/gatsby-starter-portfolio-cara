@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => (
           },
         },
         main: {
-          margin: `100px 0 0 200px`,
+          margin: `100px 0 0 0`,
         },
         html: {
           fontSize: `18px`,
