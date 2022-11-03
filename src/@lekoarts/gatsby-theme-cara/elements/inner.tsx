@@ -13,7 +13,12 @@ const Inner = ({ className = ``, children }: InnerProps) => (
       textAlign: `left`,
       position: `relative`,
       marginBottom: `300px`,
-      marginLeft: `200px`,
+      paddingLeft: `10px`,
+      paddingRight: `10px`,
+      "@media only screen and (min-width: 640px)": {
+        paddingLeft: `100px`,
+        paddingRight: `100px`,
+      },
     }}
     className={className}
   >
