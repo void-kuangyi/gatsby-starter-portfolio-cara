@@ -33,24 +33,8 @@ const Dalle = () => (
         left="25%"
         top="5%"
       />
-      <Svg
-        icon="upDown"
-        hiddenMobile
-        width={24}
-        color="icon_orange"
-        left="80%"
-        top="80%"
-      />
     </UpDown>
     <UpDownWide>
-      <Svg
-        icon="arrowUp"
-        hiddenMobile
-        width={16}
-        color="icon_purple"
-        left="5%"
-        top="80%"
-      />
       <Svg
         icon="triangle"
         width={12}
@@ -86,7 +70,6 @@ const Dalle = () => (
     />
     <Svg icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
     <Svg icon="box" width={6} color="icon_orange" left="10%" top="10%" />
-    <Svg icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
     <Svg
       icon="hexa"
       width={8}
