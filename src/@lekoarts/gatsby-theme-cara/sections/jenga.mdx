@@ -3,6 +3,7 @@ import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Title from "../elements/title.tsx";
 import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 # Play and Vulnerability
 
@@ -41,7 +42,6 @@ import AliceCarousel from "react-alice-carousel";
 </Text>
 <Gap margin={100} />
 <img src="../../../jenga/jenga.png" />
-<Gap margin={100} />
 <AliceCarousel
   animationDuration="2000"
   infinite
@@ -51,28 +51,35 @@ import AliceCarousel from "react-alice-carousel";
   disableButtonsControls
   items={[
     <img
-      src="../../../seasaw/seasaw2.png"
+      src="../../../jenga/jenga-1.png"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../seasaw/seasaw.png"
+      src="../../../jenga/jenga2.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../seasaw/seasaw3.png"
+      src="../../../jenga/jenga3.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../seasaw/seasaw4.png"
+      src="../../../jenga/jenga4.JPG"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../jenga/jenga5.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
