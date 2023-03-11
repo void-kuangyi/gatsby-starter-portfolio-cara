@@ -10,10 +10,10 @@ module.exports = {
     siteTitle: `Xing Kuangyi`,
     siteTitleAlt: `Xing Kuangyi's portfolio site`,
     siteHeadline: `Xing Kuangyi's portfolio site`,
-    siteUrl: `https://xingkuangyi.gatsbyjs.io/`,
+    siteUrl: `https://xingkuangyi.com/`,
     siteDescription: `Portfolio website for Xing Kuangyi`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
+    siteImage: ``,
     author: `@lekoarts_de`,
   },
   plugins: [
@@ -34,18 +34,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#f6ad55`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        icons: [],
       },
     },
     `gatsby-plugin-gatsby-cloud`,
