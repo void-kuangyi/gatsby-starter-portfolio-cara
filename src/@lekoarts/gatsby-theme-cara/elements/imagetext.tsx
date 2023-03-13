@@ -15,7 +15,7 @@ const ImageText = ({ src, children }: ImageTextProps) => (
       },
     }}
   >
-    <div sx={{ marginRight: `40px` }}>
+    <div sx={{ marginRight: `40px`, flexBasis: `60%` }}>
       <img src={src} />
     </div>
     <div sx={{ flexBasis: `80%` }}>{children}</div>

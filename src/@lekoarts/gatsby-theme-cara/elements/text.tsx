@@ -9,7 +9,7 @@ type TextProps = {
 const Text = ({ title, children }: TextProps) => (
   <div
     sx={{
-      marginBottom: `100px`,
+      marginBottom: `50px`,
     }}
   >
     <div
