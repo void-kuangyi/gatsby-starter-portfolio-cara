@@ -9,7 +9,7 @@ import Intro from "../sections/intro";
 const Hero = () => (
   <div>
     <UpDown>
-      <Svg
+      {/* <Svg
         icon="triangle"
         hiddenMobile
         width={48}
@@ -17,7 +17,7 @@ const Hero = () => (
         color="icon_orange"
         left="10%"
         top="20%"
-      />
+      /> */}
       {/* <Svg
         icon="hexa"
         width={10}
@@ -45,7 +45,7 @@ const Hero = () => (
         left="90%"
         top="50%"
       />
-      <Svg icon="circle" width={16} color="icon_darker" left="70%" top="90%" />
+      {/* <Svg icon="circle" width={16} color="icon_darker" left="70%" top="90%" /> */}
       {/* <Svg
         icon="triangle"
         width={16}
@@ -100,14 +100,14 @@ const Hero = () => (
       top="5%"
     />
     {/* <Svg icon="circle" width={64} color="icon_green" left="80%" top="100%" /> */}
-    <Svg
+    {/* <Svg
       icon="box"
       hiddenMobile
       width={10}
       color="icon_purple"
       left="5%"
       top="90%"
-    />
+    /> */}
     <Svg icon="box" width={6} color="icon_darkest" left="10%" top="10%" />
     <Svg icon="box" width={12} color="icon_darkest" left="40%" top="40%" />
     <Svg

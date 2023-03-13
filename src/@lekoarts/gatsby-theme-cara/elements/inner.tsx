@@ -12,7 +12,7 @@ const Inner = ({ className = ``, children }: InnerProps) => (
       width: [`full`, `full`, `full`, `full`, `full`, `4/5`],
       textAlign: `left`,
       position: `relative`,
-      marginBottom: `300px`,
+      marginBottom: `150px`,
       paddingLeft: `10px`,
       paddingRight: `10px`,
       "@media only screen and (min-width: 640px)": {

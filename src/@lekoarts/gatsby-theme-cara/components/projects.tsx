@@ -57,7 +57,7 @@ const Projects = () => (
         left="90%"
         top="30%"
       />
-      <Svg icon="circle" width={16} color="icon_yellow" left="70%" top="90%" />
+      {/* <Svg icon="circle" width={16} color="icon_yellow" left="70%" top="90%" /> */}
       {/* <Svg
         icon="triangle"
         hiddenMobile
@@ -91,9 +91,9 @@ const Projects = () => (
       left="4%"
       top="20%"
     />
-    <Svg icon="circle" width={12} color="icon_pink" left="80%" top="60%" />
-    <Svg icon="box" width={6} color="icon_orange" left="10%" top="10%" />
-    <Svg icon="box" width={12} color="icon_yellow" left="29%" top="50%" />
+    {/* <Svg icon="circle" width={12} color="icon_pink" left="80%" top="60%" /> */}
+    {/* <Svg icon="box" width={6} color="icon_orange" left="10%" top="10%" /> */}
+    {/* <Svg icon="box" width={12} color="icon_yellow" left="29%" top="50%" /> */}
     {/* <Svg icon="hexa" width={16} stroke color="icon_red" left="75%" top="30%" /> */}
     <Svg
       icon="hexa"

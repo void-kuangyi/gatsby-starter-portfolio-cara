@@ -8,14 +8,14 @@ import AboutMDX from "../sections/about";
 const About = () => (
   <div>
     <UpDownWide>
-      <Svg
+      {/* <Svg
         icon="triangle"
         width={12}
         stroke
         color="icon_brightest"
         left="95%"
         top="50%"
-      />
+      /> */}
     </UpDownWide>
     <Inner>
       <AboutMDX />
