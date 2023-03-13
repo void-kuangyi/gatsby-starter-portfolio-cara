@@ -12,7 +12,13 @@ const Text = ({ title, children }: TextProps) => (
       marginBottom: `100px`,
     }}
   >
-    <h2>{title}</h2>
+    <div
+      sx={{
+        color: `black`,
+      }}
+    >
+      <h2>{title}</h2>
+    </div>
     <div>{children}</div>
   </div>
 );
