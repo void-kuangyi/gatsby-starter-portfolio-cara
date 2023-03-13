@@ -3,15 +3,23 @@ import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Title from "../elements/title.tsx";
 import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 # SeaSaw
 
-<img src="../../../seasaw/front.png" />
+<img src="../../../seasaw/logo.png" />
+
+<h5>A playful kitchen experience for children</h5>
+
+<img src="../../../seasaw/seasaw3.png" />
 
 <Gap margin={200} />
 
-<Text title="Background">
+<Title>
+  <h3>Background</h3>
+</Title>
+<Text>
   According to an earlier survey I conducted among young adults, among 77
   responses, 3 in 10 people find cooking themselves extremely difficult when
   they first moved out family. And 92.8% people agree that “Being involved in
@@ -20,48 +28,57 @@ import "react-alice-carousel/lib/alice-carousel.css";
   Unable to cook themselves is a big barrier for young adults to become
   independent.
   <br />
-  This project focuses on "How can i design playful experience to encourage
-  children more involved in the kitchen, in order to prepare them for future
-  independence?"
+  <br />
+  This project focuses on <b>
+    "how to encourages children more involved in the kitchen, in order to
+    prepare them for future independence"
+  </b>
 </Text>
 
 <Title>
   <h3>Design Principles</h3>
 </Title>
-
-<Text title="Controlled Risk">
-  The current market is filled up with overly safe kitchen toys rather than
-  actual kids-safe knife because knife is generally considered dangerous and
-  should not be touched by children.
-  <br /> <br />
-  However, If children are presented with risky items with a serious functional
-  purpose, they will conduct more cautiously, conduct more experimentation, and
-  gain more confidence and independence than overly safe items. We should focus
-  on designing for children "as safe as needed" rather than "as safe as
-  possible" (Brussoni et al., 2012)
+<Text title="Controlled Risk: as safe as needed">
+  If children are presented with risky items with a serious functional purpose,
+  they will conduct more cautiously, conduct more experimentation, and gain more
+  confidence and independence than overly safe items. We should focus on
+  designing for children "as safe as needed" rather than "as safe as possible"
+  (Brussoni et al., 2012)
 </Text>
 
-<Text title="Embodied Movement">
-  <img src="../../../seasaw/Process8.png" />
-  Many cultures involve their whole body when cooking. For example, chinese grind
-  soybeans with the millstone, indians cook their naan with a big stove, italian
-  spread tomato paste on table to wait them dry. This project focuses on engaging
-  children in cooking with their whole body, like they are dancing with the food.
-  It also comes from the consideration that children don't have the fine motor skills
-  to control a knife yet.
+<Text title="Embodied Movement: dance with food">
+  This project focuses on engaging children in cooking with their whole body,
+  like they are dancing with the food. It also comes from the consideration that
+  children don't have the fine motor skills to control a knife yet.
 </Text>
 
 <Title>
-  <h3>Design Process</h3>
+  <h3>Ideations</h3>
 </Title>
-<img src="../../../seasaw/process.png" />
-<img src="../../../seasaw/process1.png" />
-<img src="../../../seasaw/process2.png" />
-<img src="../../../seasaw/Process3.png" />
-<img src="../../../seasaw/process4.png" />
-<img src="../../../seasaw/Process5.png" />
-<img src="../../../seasaw/Process6.png" />
-<Gap margin={100} />
+<img src="../../../seasaw/Sketch2.jpg" />
+<img src="../../../seasaw/Sketch3.png" />
+<img src="../../../seasaw/Sketch1.png" />
+<img src="../../../seasaw/Sketch4.png" />
+<Title>
+  <h3>Design</h3>
+</Title>
+<img src="../../../seasaw/render1.png" />
+<i>Translucent surface for enriched chopping experience</i>
+
+<Gap margin={20} />
+
+<img src="../../../seasaw/render5.png" />
+<i>Detachable blade, heavy weight and protection rail for children safety</i>
+
+<Gap margin={20} />
+<img src="../../../seasaw/render3.png" />
+<i>
+  A small size for table usage and a big size for supporting both solo and
+  cooperative play
+</i>
+<Title>
+  <h3>Development</h3>
+</Title>
 <AliceCarousel
   animationDuration="2000"
   infinite
@@ -71,28 +88,28 @@ import "react-alice-carousel/lib/alice-carousel.css";
   disableButtonsControls
   items={[
     <img
-      src="../../../seasaw/seasaw2.png"
+      src="../../../seasaw/development1.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../seasaw/seasaw.png"
+      src="../../../seasaw/development2.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../seasaw/seasaw3.png"
+      src="../../../seasaw/development3.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../seasaw/seasaw4.png"
+      src="../../../seasaw/development4.JPG"
       onDragStart={(e) => {
         e.preventDefault();
       }}
@@ -100,7 +117,14 @@ import "react-alice-carousel/lib/alice-carousel.css";
     />,
   ]}
 />
-<Gap margin={100} />
+<Title>
+  <h3>Product</h3>
+</Title>
+<img src="../../../seasaw/seasaw.png" />
+<img src="../../../seasaw/seasaw2.png" />
+<img src="../../../seasaw/seasaw4.png" />
+<img src="../../../seasaw/seasaw5.JPG" />
+
 <iframe
   width="100%"
   height="500"
@@ -110,23 +134,25 @@ import "react-alice-carousel/lib/alice-carousel.css";
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
 ></iframe>
-<Gap margin={300} />
-<Text title="Testing">
-  I collaborated with{" "}
+
+<Title>
+  <h3>Testing</h3>
+</Title>
+<Text>
+  I collaborated with
   <a href="https://nicolaikultur.dk/for-born/"> Nicolai for børn</a>, a cultural
-  child center in Kolding, for user testing.
+  child center in Kolding, for user testing. To help participants better understand
+  the session, a poster, a info flyer and consent forms in Danish or English were
+  prepared.
   <br /> <br />
-  To help participants better understand the session, a poster, a info flyer and
-  consent forms in Danish or English were prepared.
-  <br /> <br />
-  <img src="../../../seasaw/Process7.png" />
-  <br /> <br />
-  The set up provided spring onion, tomatoes, asparagus as cutting materials.
-  <br /> <br />
+  <img src="../../../seasaw/Poster.png" />
+  <Annotation>A poster for children</Annotation>
+  <img src="../../../seasaw/info-flyer.png" />
+  <Annotation>An information flyer for parents</Annotation>
   <img src="../../../seasaw/test1.JPG" />
-  <br /> <br />
-  In total, seven children interacted with SeaSaw. Their ages range between 4 -
-  8 years old.
+  <Annotation>The set up for the session</Annotation>
+  In total, seven children, from 4 - 8 years old, interacted with SeaSaw. After their
+  interaction, I interviewed their parents.
   <br /> <br />
   <img src="../../../seasaw/test2.JPG" />
   <img src="../../../seasaw/test3.JPG" />
@@ -134,35 +160,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
   <img src="../../../seasaw/test5.JPG" />
 </Text>
 
-<Text title="Insights">
-  I interviewed with 6 parents about the experience their children with SeaSaw.
-  All parents think it is a nice, fun, alternative way of cutting. In terms of
-  using SeaSaw at their kitchen, most parents are unsure about it. Only one
-  parent would use it because he likes to make their kitchen playful. Three
-  parents think it is messy to clean. One parent expressed her concern over the
-  hygiene of cutting food on the floor.
-  <br /> <br />
-  Instead of at their kitchen, one parent suggested kindergarten or school's
-  cooking class might be a good place for SeaSaw. They all like it if SeaSaw is
-  smaller and they prefer it over a standard kids-safe knife.
-  <br /> <br />
-  Contrary to parents who prefer their children using hands to cook on the
-  counter, most children actually enjoy using their full body to cut. Tomato is
-  most children’s favourite to cut because it splashes and makes fun noise.
-</Text>
-
-<Title>
-  <h3>Future Work</h3>
-</Title>
-<Text>
-  A smaller size SeaSaw in different contexts
-  <br /> <br />
-  Better blade materials
-  <br /> <br />
-  Packaging of SeaSaw
-</Text>
-
-<Gap margin={400} />
+<Gap margin={100} />
 
 <hr />
 
