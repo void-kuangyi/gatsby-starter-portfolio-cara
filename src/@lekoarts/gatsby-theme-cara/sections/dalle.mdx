@@ -2,101 +2,103 @@ import Gap from "../elements/gap.tsx";
 import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Title from "../elements/title.tsx";
+import Images from "../elements/images.tsx";
+import Annotation from "../elements/annotation.tsx";
 import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
-<img src="../../../wemagine/wemaginelogo.png" />
+<img src="../../../wemagine/wemaginelogo.png" />;
 
-A business exploration on the viability of dynamic office art
+##### A business exploration on the viability of dynamic office art
 
-<Gap margin={200} />
-<Text title="Introduction">
-  Wemagine is a business idea that co-create the wall art by interacting
-  wemagine system through speech. The project mainly focuses on the
-  hypothesis-driven design process to test out the feasibility, viability and
-  desirability of the idea.
-</Text>
+<Title>
+  <h3>Concept</h3>
+</Title>
+<Text>
+  Wemagine is a business idea that co-create the wall art by interacting system
+  through speech.{" "}
+  <b>
+    The project mainly focuses on the hypothesis-driven design process to test
+    out the feasibility, viability and desirability of a business idea.{" "}
+  </b>
+  Wemagine service utilises DALLE-2, which is an AI system that can create realistic
+  images and art from a description in natural language (OpenAi, n.d.).
 
-<Text title="Concept">
-  Wemagine service utilises DALLE-2, which is a new AI system that can create
-  realistic images and art from a description in natural language, where the
-  description is from translating the speech input from users to text (OpenAi,
-  n.d.). The system interaction among users, wemagine service and DALLE-2 are
-  shown below.
-  <Gap margin={40} />
-  <img src="../../../wemagine/concept.png" />
   <Gap margin={10} />
-  <img src="../../../wemagine/Tech.png" />
+ 
 </Text>
+<img src="../../../wemagine/concept.png" />
+<Annotation>Co-create the office wall art through speech by interacting with wemagine system </Annotation>
+ <img src="../../../wemagine/Tech.png" />
+ <Annotation>System interaction among users, wemagine service and DALLE-2</Annotation>
+ 
+ <Title>
+  <h3>Business Model Canvas</h3>
+</Title>
+<img src="../../../wemagine/businessmodel.jpeg" />
 
-<Text title="Business Model Canvas">
-  <img src="../../../wemagine/businessmodel.jpeg" />
-</Text>
-
-<Text title="Problem-Solution Fit">
-  Through a landing page test, quantitative data about the potential interest of
-  the target audience was collected.
-  <Gap margin={40} />
-  <img src="../../../wemagine/landingpage.png" />
-  <Gap margin={40} />
+<Title>
+  <h3>Problem-Solution Fit</h3>
+</Title>
+<h5>Landing page test for customers' insights</h5>
+<img src="../../../wemagine/landingpage.png" />
+<Annotation>Landing page design</Annotation>
+<Text>
   We conducted a landing page experiment to find out if customers would be
   willing to pay more for extra perks and gain insights as to which packages of
-  our products customers would be most interested in. We created a landing page
-  and presented the user with three different monthly subscription packages.
+  our products customers would be most interested in.
 </Text>
 
-<Text title="Go-to-Market Plan">
-  To effectively attract clients and grow our customer base, wemagine uses
-  multiple strategies, categorised by the customer stages by Steve Blank (n.d.)
-  & Alexandre Azevedo ( 2019).
-  <Gap margin={40} />
-  <AliceCarousel
-    animationDuration="2000"
-    infinite
-    controlsStrategy="alternate"
-    autoPlay
-    mouseTracking
-    disableButtonsControls
-    items={[
-      <img
-        src="../../../wemagine/market1.jpeg"
-        onDragStart={(e) => {
-          e.preventDefault();
-        }}
-        role="presentation"
-      />,
-      <img
-        src="../../../wemagine/market2.jpeg"
-        onDragStart={(e) => {
-          e.preventDefault();
-        }}
-        role="presentation"
-      />,
-      <img
-        src="../../../wemagine/market3.jpeg"
-        onDragStart={(e) => {
-          e.preventDefault();
-        }}
-        role="presentation"
-      />,
-    ]}
-  />
-  <Gap margin={40} />
+<Title>
+  <h3>Go to Market Plan</h3>
+</Title>
+<h5>Get-Keep-Grow strategy</h5>
+<AliceCarousel
+  animationDuration="2000"
+  infinite
+  controlsStrategy="alternate"
+  autoPlay
+  mouseTracking
+  disableButtonsControls
+  items={[
+    <img
+      src="../../../wemagine/market1.jpeg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../wemagine/market2.jpeg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../wemagine/market3.jpeg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+  ]}
+/>
+<h5>Billboard Advertisement</h5>
+<img src="../../../wemagine/billboard.png" />
+<Text>
   Additionally, we co-advertise with other brands on billboards, where content
   of these brands will be displayed, whilst viewers can vote for the content, by
   scanning the QR-code on the billboard.
-  <Gap margin={10} />
-  <img src="../../../wemagine/billboard.png" />
 </Text>
 
-<Text title="Ecosystem Positioning">
-  <img src="../../../wemagine/System.jpeg" />
-</Text>
+<Title>
+  <h3>Ecosystem Positioning</h3>
+</Title>
+<img src="../../../wemagine/System.jpeg" />
 
-<Text title="Financial Model">
-  ​​The following section describes the financial model created for the first 24
-  months.
-  <Gap margin={40} />
-  <img src="../../../wemagine/finance.jpeg" />
-  <Gap margin={10} />
-  <img src="../../../wemagine/future.jpeg" />
-</Text>
+<Title>
+  <h3>Financial Model for the first 24 months</h3>
+</Title>
+<img src="../../../wemagine/finance.jpeg" />
+<img src="../../../wemagine/future.jpeg" />
