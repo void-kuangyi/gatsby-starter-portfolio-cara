@@ -13,7 +13,7 @@ const Title = ({ gap, children }: TitleProps) => (
       marginTop: `200px`,
     }}
   >
-    {children}
+    <h3>{children}</h3>
   </div>
 );
 
