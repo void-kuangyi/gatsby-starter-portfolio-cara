@@ -18,14 +18,6 @@ const Flow = () => (
         top="75%"
       />
       <Svg
-        icon="upDown"
-        hiddenMobile
-        width={8}
-        color="icon_darkest"
-        left="70%"
-        top="20%"
-      />
-      <Svg
         icon="triangle"
         width={8}
         stroke
@@ -36,21 +28,13 @@ const Flow = () => (
       <Svg
         icon="upDown"
         hiddenMobile
-        width={24}
+        width={12}
         color="icon_orange"
         left="80%"
         top="80%"
       />
     </UpDown>
     <UpDownWide>
-      <Svg
-        icon="arrowUp"
-        hiddenMobile
-        width={16}
-        color="icon_purple"
-        left="5%"
-        top="80%"
-      />
       <Svg
         icon="triangle"
         width={12}
