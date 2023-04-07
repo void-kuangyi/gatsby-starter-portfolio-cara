@@ -42,14 +42,6 @@ const Projects = () => (
     </UpDown>
     <UpDownWide>
       <Svg
-        icon="arrowUp"
-        hiddenMobile
-        width={16}
-        color="icon_green"
-        left="20%"
-        top="90%"
-      />
-      <Svg
         icon="triangle"
         width={12}
         stroke
@@ -72,14 +64,6 @@ const Projects = () => (
         width={6}
         color="icon_brightest"
         left="75%"
-        top="10%"
-      />
-      <Svg
-        icon="upDown"
-        hiddenMobile
-        width={8}
-        color="icon_green"
-        left="45%"
         top="10%"
       />
     </UpDownWide>

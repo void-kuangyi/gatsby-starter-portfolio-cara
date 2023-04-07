@@ -3,6 +3,7 @@ import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Annotation from "../elements/annotation.tsx";
 import Title from "../elements/title.tsx";
+import Images from "../elements/images.tsx";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -224,17 +225,24 @@ al., 2009]. Children are expected to spin or push through the curtain.
 </Text>
 
 <Text title="How does layout influence children's social interaction?">
-  <img src="../../../flow/layout1.png" />
-  <img src="../../../flow/layout2.png" />
+  <Images>
+    <img src="../../../flow/layout1.png" />
+    <img src="../../../flow/layout2.png" />
+  </Images>
   <Annotation>Small equipments vs. Big equipments in the center</Annotation>
-  <b>Putting the home shape in the centre is double-sided.</b> On one side, it simultaneously
-  provides an observation point for the margin category children and creates closer
-  proximity between the two categories. Experts acknowledged the importance of physical
-  close proximity (for example, how close two children sit next to each other in
-  a classroom) when forming a friendship. It is assumed that the same principle is
-  applicable in a playground. On the other side, being surrounded by the centre category
-  can be intimidating for the margin category, which might stop them completely from
-  approaching the play area. Therefore, <b>an optimal distance that creates enough physical proximity without social pressures is yet to be found.</b>
+  <b>Putting the home shape in the centre is double-sided.</b> On one side, it
+  simultaneously provides an observation point for the margin category children
+  and creates closer proximity between the two categories. Experts acknowledged
+  the importance of physical close proximity (for example, how close two
+  children sit next to each other in a classroom) when forming a friendship. It
+  is assumed that the same principle is applicable in a playground. On the other
+  side, being surrounded by the centre category can be intimidating for the
+  margin category, which might stop them completely from approaching the play
+  area. Therefore,{" "}
+  <b>
+    an optimal distance that creates enough physical proximity without social
+    pressures is yet to be found.
+  </b>
 </Text>
 
 <Text title="Does transluency create comfort?">

@@ -26,7 +26,6 @@ const Hero = () => (
         left="60%"
         top="70%"
       /> */}
-      <Svg icon="box" width={6} color="icon_darker" left="60%" top="15%" />
     </UpDown>
     <UpDownWide>
       {/* <Svg
@@ -37,14 +36,6 @@ const Hero = () => (
         left="80%"
         top="10%"
       /> */}
-      <Svg
-        icon="triangle"
-        width={12}
-        stroke
-        color="icon_brightest"
-        left="90%"
-        top="50%"
-      />
       {/* <Svg icon="circle" width={16} color="icon_darker" left="70%" top="90%" /> */}
       {/* <Svg
         icon="triangle"
@@ -80,9 +71,6 @@ const Hero = () => (
       left="5%"
       top="70%"
     />
-    <Svg icon="circle" width={6} color="icon_darkest" left="4%" top="20%" />
-    <Svg icon="circle" width={12} color="icon_darkest" left="50%" top="60%" />
-    <Svg icon="upDown" width={8} color="icon_darkest" left="95%" top="90%" />
     <Svg
       icon="upDown"
       hiddenMobile
@@ -108,24 +96,6 @@ const Hero = () => (
       left="5%"
       top="90%"
     /> */}
-    <Svg icon="box" width={6} color="icon_darkest" left="10%" top="10%" />
-    <Svg icon="box" width={12} color="icon_darkest" left="40%" top="40%" />
-    <Svg
-      icon="hexa"
-      width={16}
-      stroke
-      color="icon_darker"
-      left="10%"
-      top="50%"
-    />
-    <Svg
-      icon="hexa"
-      width={8}
-      stroke
-      color="icon_darker"
-      left="80%"
-      top="70%"
-    />
     <Inner>
       <Intro />
     </Inner>

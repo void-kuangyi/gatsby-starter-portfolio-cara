@@ -45,7 +45,7 @@ const ProjectCard = ({
     }}
   >
     <div sx={{ margin: `-20px 0px 30px 0px` }}>
-      {status === "In progress" ? (
+      {status === "Coming soon" ? (
         <Badge pill warning>
           {status}
         </Badge>
