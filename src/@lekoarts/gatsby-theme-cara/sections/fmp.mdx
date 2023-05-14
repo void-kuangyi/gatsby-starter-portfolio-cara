@@ -1,0 +1,269 @@
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Annotation from "../elements/annotation.tsx";
+import Title from "../elements/title.tsx";
+import Images from "../elements/images.tsx";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+# Weave
+
+<h5>
+  Discursive Design for invisible barriers faced by foreign-born residents
+  navigating Dutch public systems
+</h5>
+
+<Gap margin={200} />
+
+<Title>
+  <h3>Introduction</h3>
+</Title>
+<Text>
+  There are 400,000 immigrants coming to the Netherlands every year (CBS,2022).
+  In Eindhoven, 21% of residents were born outside the country. When
+  foreign-born adults navigate the Dutch public system, language is often viewed
+  as the visible barrier while beneath the surface lies numerous additional
+  invisible barriers stemming from cultural differences.
+  <br />
+  <br />
+  Weave is a discursive design project encouraging discourse on these challenges.
+  It aims to raise awareness of invisible barriers faced by foreign-born residents
+  and provide a space for the audience to gain exposure to information, introspect,
+  and engage in discussions. By threading individual responses to each question,
+  people contribute to creating a data map, sharing their personal journey of navigating
+  the Dutch public system. Upon completion, wearing the special glasses offers a
+  fresh perspective, unveiling hidden texts that reveal deeper meanings behind each
+  question.
+  <br />
+  <br />
+  The project is grounded in research and draws insights from the designer’s
+  personal experience as a foreign-born resident in the Netherlands and
+  interviews conducted with individuals born inside and outside the country.
+</Text>
+
+<Title>
+  <h3>Research</h3>
+</Title>
+<Text>
+  A total of eight participants took part in the interviews, comprising five
+  foreign-born residents and three Dutch-born residents. The interviewees were
+  encouraged to share their past experiences with public services and express
+  their associated emotions. Additionally, the provincial council and waterschap
+  election held on March 25th, 2023, were used as a case study to explore the
+  participants' perspectives on future planning and uncover underlying barriers
+  to political engagement.
+  <br />
+  <br />
+  Drawing upon both the analysis of the interviews and relevant literature on conflict
+  analysis (Herbert, 2017), a conflict map was generated. This map highlights a correlation
+  between the level of familiarity with the system and the amount of information
+  available, which, is influenced by the size of an individual's social network.
+  However, due to the unique backgrounds of foreign-born residents, they are more
+  likely to expend additional cognitive effort in adapting to the model of the Dutch
+  public system. Moreover, the prevalence of homophily acts as a limiting factor
+  in the formation of extensive social networks within the host country, thereby
+  impeding access to pertinent information.
+</Text>
+<Images>
+  <img src="../../../fmp/Asset.png" />
+</Images>
+
+<Annotation>
+  Conflict map among social network, cultural difference and familiarity with
+  the system{" "}
+</Annotation>
+
+<Title>
+  <h3>Ideations</h3>
+</Title>
+<Text>
+  I adopted the 10 modes of message form (Tharp & Tharp, 2016) as an ideation
+  methodology.
+</Text>
+<AliceCarousel
+  animationDuration="2000"
+  infinite
+  controlsStrategy="alternate"
+  autoPlay
+  mouseTracking
+  disableButtonsControls
+  items={[
+    <img
+      src="../../../fmp/idea3.png"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/idea1.png"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/idea2.png"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/idea4.png"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+  ]}
+/>
+<Annotation>Sketches for different ideas</Annotation>
+
+<Title>
+  <h3>Design</h3>
+</Title>
+<Text>
+  The final form is still under development until final demo day, 9th June,
+  2023. Below shows the interaction with the low fidelity prototype. The whole
+  artefact is 200cm x 59.4cm x 40cm.
+</Text>
+<Images>
+  <img src="../../../fmp/testing1.JPG" />
+</Images>
+<Annotation>
+  Participants pick a string that represents their country of origin
+</Annotation>
+<Images>
+  <img src="../../../fmp/testing2.JPG" />
+</Images>
+<Annotation>
+  Participants indicate their response to the question by threading their thread
+  through the corresponding hole that represents their chosen answer.
+</Annotation>
+<Images>
+  <img src="../../../fmp/testing3.JPG" />
+</Images>
+<Annotation>
+  Participants tie their thread at a specific height to indicate their level of
+  interest in voting if they are eligible.
+</Annotation>
+<Text>
+  Based on the literature review and interviews implemented, I chose 7 questions
+  to visualise the invisible barriers that foreign-born residents experience in
+  the Netherlands. These are the questions:
+  <ul>
+    <li>How fluent is your Dutch?</li>
+    <li>
+      How different do you find the Dutch culture compared to your home
+      environment?
+    </li>
+    <li>
+      How concerned are you about your current visa status in the Netherlands?
+    </li>
+    <li>
+      How many Dutch locals do you have as close friends in where you live?
+    </li>
+    <li>
+      In challenging situations, such as dealing with tax matters, what is your
+      first resource?
+    </li>
+    <li>How interested are you in discussing Dutch news with others?</li>
+    <li>
+      How interested are you in participating in Dutch elections if you are
+      eligible to do so?
+    </li>
+  </ul>
+</Text>
+<Images>
+  <img src="../../../fmp/testing4.JPG" />
+</Images>
+<Annotation>
+  Upon completion, participants have the option to wear special glasses that
+  utilise the anaglyph effect, allowing them to uncover hidden texts that reveal
+  deeper meanings associated with each question.
+</Annotation>
+<Text>
+  The deeper meaning associated with each question are:
+  <ul>
+    <li>How fluent is your Dutch?</li> When you are an adult, mastering the
+    Dutch language is challenging, especially when having highly demanding work,
+    education and/or family responsibilities at the same time.
+    <br />
+    <br />
+    <li>
+      How different do you find the Dutch culture compared to your home
+      environment?
+    </li>
+    When your home environment culture differs more from the mainstream social
+    culture, it requires more mental energy to understand, adjust to, and find
+    comfort within it. Around 90% of cultural characteristics, such as
+    non-verbal communication or values, are difficult to identify and easy to
+    ignore (Lachner et al., 2015).
+    <br />
+    <br />
+    <li>
+      How concerned are you about your current visa status in the Netherlands?
+    </li>
+    If you are on a temporary visa, you might feel insecure in the system and
+    fear regarding its renewal. The possibility of having to leave the country
+    without any influence may lead to a hesitation in fully connecting with
+    society. You may also feel hesitant about engaging in public affairs or
+    advocating for your rights due to concerns about the potential impact on
+    your visa.
+    <br />
+    <br />
+    <li>
+      How many Dutch locals do you have as close friends in where you live?
+    </li>
+    When you have local friends and actively socialise with them, you feel more
+    connected and interested in the place you live in.
+    <br />
+    <br />
+    <li>
+      In challenging situations, such as dealing with tax matters, what is your
+      first resource?
+    </li>
+    When you don’t have someone local to support and help you in navigating
+    bureaucratic tasks, you may feel frustrated and overwhelmed. Whereas, when
+    you know someone who can guide you, it feels reassuring and secure.
+    <br />
+    <br />
+    <li>How interested are you in discussing Dutch news with others?</li>
+    When you are engaged with the news, it means that you are up to date with
+    one of the most significant information sources, and being connected to
+    society.
+    <br />
+    <br />
+    <li>
+      How interested are you in participating in Dutch elections if you are
+      eligible to do so?
+    </li>
+    When you express interest in participating in dutch elections, it signifies
+    that you are actively represented, increasing the likelihood that your voice
+    will be heard in policy-making processes and efforts to bring about
+    meaningful change.
+    <br />
+    <br />
+  </ul>
+</Text>
+
+<hr />
+
+##### References:
+
+<div>
+  Herbert, S. (2017). Conflict analysis: Topic guide. Birmingham, UK: GSDRC,
+  University of Birmingham.
+</div>
+<br />
+<div>
+  CBS (2022). How many people immigrate to the Netherlands? Statistics
+  Netherlands.
+  https://www.cbs.nl/en-gb/dossier/migration-and-integration/how-many-people-immigrate-to-the-netherlands-
+</div>
+<div>
+  Tharp, B. M., & Tharp, S. M. (2019). Discursive Design: Critical, Speculative,
+  and Alternative Things. Amsterdam University Press.
+</div>
