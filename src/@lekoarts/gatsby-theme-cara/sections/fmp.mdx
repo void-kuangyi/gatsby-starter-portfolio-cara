@@ -10,77 +10,180 @@ import "react-alice-carousel/lib/alice-carousel.css";
 # Weave
 
 <h5>
-  Discursive Design for invisible barriers faced by foreign-born residents
-  navigating Dutch public systems
+  Discursive Design: Data physicalisation of invisible barriers faced by foreign
+  residents navigating Dutch public systems
 </h5>
 
 <Gap margin={200} />
 
-<Title>
-  <h3>Introduction</h3>
-</Title>
 <Text>
-  There are 400,000 immigrants coming to the Netherlands every year (CBS,2022).
-  In Eindhoven, 21% of residents were born outside the country. When
-  foreign-born adults navigate the Dutch public system, language is often viewed
-  as the visible barrier while beneath the surface lies numerous additional
-  invisible barriers stemming from cultural differences.
+  In 2022, 401,351 persons immigrated to the Netherlands(Statistics
+  Netherlands,2022). When foreign-born adults navigate the Dutch public system,
+  <strong>
+    language is often viewed as the visible barrier while beneath the surface
+    lies numerous additional invisible barriers stemming from cultural
+    differences.
+  </strong>
   <br />
   <br />
-  Weave is a discursive design project encouraging discourse on these challenges.
-  It aims to raise awareness of invisible barriers faced by foreign-born residents
-  and provide a space for the audience to gain exposure to information, introspect,
-  and engage in discussions. By threading individual responses to each question,
-  people contribute to creating a data map, sharing their personal journey of navigating
-  the Dutch public system. Upon completion, wearing the special glasses offers a
-  fresh perspective, unveiling hidden texts that reveal deeper meanings behind each
+  <img src="../../../fmp/theory.png" />
+</Text>
+
+<Text>
+  <strong>
+    Weave is a discursive design project encouraging discourse on these
+    challenges.
+  </strong>
+  It aims to raise awareness of invisible barriers faced by foreign residents, especially
+  skilled immigrants, and provide a space for audience to gain exposure to information,
+  introspect, and engage in discussions.
+  <br />
+  <br />
+  By threading individual responses to each question, people contribute to
+  creating a data map, sharing their personal journey of navigating the Dutch
+  public system. Upon completion, wearing the special glasses offers a fresh
+  perspective, unveiling hidden texts that reveal deeper meanings behind each
   question.
-  <br />
-  <br />
-  The project is grounded in research and draws insights from the designer’s
-  personal experience as a foreign-born resident in the Netherlands and
-  interviews conducted with individuals born inside and outside the country.
 </Text>
+<img src="../../../fmp/final1.jpg" />
+<img src="../../../fmp/final2.jpg" />
+<img src="../../../fmp/final4.jpg" />
 
 <Title>
-  <h3>Research</h3>
+  <h3>Interaction</h3>
 </Title>
-<Text>
-  A total of eight participants took part in the interviews, comprising five
-  foreign-born residents and three Dutch-born residents. The interviewees were
-  encouraged to share their past experiences with public services and express
-  their associated emotions. Additionally, the provincial council and waterschap
-  election held on March 25th, 2023, were used as a case study to explore the
-  participants' perspectives on future planning and uncover underlying barriers
-  to political engagement.
-  <br />
-  <br />
-  Drawing upon both the analysis of the interviews and relevant literature on conflict
-  analysis (Herbert, 2017), a conflict map was generated. This map highlights a correlation
-  between the level of familiarity with the system and the amount of information
-  available, which, is influenced by the size of an individual's social network.
-  However, due to the unique backgrounds of foreign-born residents, they are more
-  likely to expend additional cognitive effort in adapting to the model of the Dutch
-  public system. Moreover, the prevalence of homophily acts as a limiting factor
-  in the formation of extensive social networks within the host country, thereby
-  impeding access to pertinent information.
-</Text>
-<Images>
-  <img src="../../../fmp/Asset.png" />
-</Images>
-
-<Annotation>
-  Conflict map among social network, cultural difference and familiarity with
-  the system{" "}
-</Annotation>
+<img src="../../../fmp/interaction1.jpg" />
+<img src="../../../fmp/interaction2.jpg" />
+<img src="../../../fmp/interaction3.jpg" />
+<img src="../../../fmp/interaction4.jpg" />
 
 <Title>
-  <h3>Ideations</h3>
+  <h3>Design Process</h3>
 </Title>
-<Text>
-  I adopted the 10 modes of message form (Tharp & Tharp, 2016) as an ideation
-  methodology.
+<img src="../../../fmp/process.png" />
+<Text title="Define">
+  The first stage centered on the question "What are the underlying barriers
+  faced by foreign-residents when they navigating the Dutch public system and
+  how are these interconnected at a systemic level?" The activities involved in
+  this stage include relation mapping, eight semi-structured interviews with 5
+  foreign residents and 3 Dutch residents.
+  <br />
+  <br />
+  <AliceCarousel
+    animationDuration="2000"
+    infinite
+    controlsStrategy="alternate"
+    autoPlay
+    mouseTracking
+    disableButtonsControls
+    items={[
+      <img
+        src="../../../fmp/interview1.JPG"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/interview2.JPG"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/interview3.JPG"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+    ]}
+  />
+  <Annotation>Interviews</Annotation>
+  <img src="../../../fmp/theory1.png" />
+  <Annotation>Conflict analysis map developed by me</Annotation>
 </Text>
+
+<Text title="Design">
+  The second stage concentrates on the question{" "}
+  <strong>
+    "How can a discursive design artefact to be developed to address the design
+    challenge?"
+  </strong>{" "}
+  and{" "}
+  <strong>
+    "How effective is the discursive artefact in terms of communication,
+    awareness-raising, and audience reflection?"
+  </strong>
+  . The activities involves ideation, sketching, user test with a low-fidelity prototype
+  and qualitative data analysis.
+  <br />
+  <br />
+  <AliceCarousel
+    animationDuration="2000"
+    infinite
+    controlsStrategy="alternate"
+    autoPlay
+    mouseTracking
+    disableButtonsControls
+    items={[
+      <img
+        src="../../../fmp/idea3.png"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/idea1.png"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/idea2.png"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/idea4.png"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+    ]}
+  />
+  <Annotation>Ideations</Annotation>
+  <img src="../../../fmp/lowfi1.JPG" />
+  <img src="../../../fmp/lowfi3.png" />
+  <img src="../../../fmp/lowfi2.jpg" />
+  <Annotation>Form Exploration</Annotation>
+  <img src="../../../fmp/testing4.JPG" />
+  <img src="../../../fmp/testing5.JPG" />
+  <img src="../../../fmp/testing6.JPG" />
+  <Annotation>Low Fidelity Prototype User Test</Annotation>
+</Text>
+
+<Text title="Develop">
+  The final stage addresses the question{" "}
+  <strong>
+    "How can the aesthetics and interaction of the current concept be improved
+    to construct a museum quality prototype?"
+  </strong>
+  . This improvement is aimed at attracting more participation, thus solidifying
+  data patterns and increasing impact. Activities in this stage involved multiple
+  iterations of form, material, interface exploration, as well as making.
+</Text>
+<img src="../../../fmp/highfi1.jpg" />
+<img src="../../../fmp/highfi2.jpg" />
+<img src="../../../fmp/highfi3.jpg" />
+<img src="../../../fmp/highfi4.jpg" />
+<img src="../../../fmp/highfi8.jpg" />
 <AliceCarousel
   animationDuration="2000"
   infinite
@@ -90,28 +193,56 @@ import "react-alice-carousel/lib/alice-carousel.css";
   disableButtonsControls
   items={[
     <img
-      src="../../../fmp/idea3.png"
+      src="../../../fmp/highfi5.jpg"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../fmp/idea1.png"
+      src="../../../fmp/highfi11.jpg"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../fmp/idea2.png"
+      src="../../../fmp/highfi6.jpg"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../fmp/idea4.png"
+      src="../../../fmp/highfi13.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/highfi7.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/highfi9.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/highfi10.jpg"
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
+      role="presentation"
+    />,
+    <img
+      src="../../../fmp/highfi12.jpg"
       onDragStart={(e) => {
         e.preventDefault();
       }}
@@ -119,41 +250,21 @@ import "react-alice-carousel/lib/alice-carousel.css";
     />,
   ]}
 />
-<Annotation>Sketches for different ideas</Annotation>
+<Annotation>
+  Exploration of anchors, yarn holders, eyewear and needles{" "}
+</Annotation>
 
 <Title>
-  <h3>Design</h3>
+  <h3>Theory behind Questions</h3>
 </Title>
+<img src="../../../fmp/theory3.png" />
 <Text>
-  The final form is still under development until final demo day, 9th June,
-  2023. Below shows the interaction with the low fidelity prototype. The whole
-  artefact is 200cm x 59.4cm x 40cm.
-</Text>
-<Images>
-  <img src="../../../fmp/testing1.JPG" />
-</Images>
-<Annotation>
-  Participants pick a string that represents their country of origin
-</Annotation>
-<Images>
-  <img src="../../../fmp/testing2.JPG" />
-</Images>
-<Annotation>
-  Participants indicate their response to the question by threading their thread
-  through the corresponding hole that represents their chosen answer.
-</Annotation>
-<Images>
-  <img src="../../../fmp/testing3.JPG" />
-</Images>
-<Annotation>
-  Participants tie their thread at a specific height to indicate their level of
-  interest in voting if they are eligible.
-</Annotation>
-<Text>
-  Based on the literature review and interviews implemented, I chose 7 questions
-  to visualise the invisible barriers that foreign-born residents experience in
-  the Netherlands. These are the questions:
-  <ul>
+  Based on the literature, interviews and personal experience,{" "}
+  <strong>
+    7 representative questions are chose to visualise the invisible barriers
+    that foreign residents experience in the Netherlands
+  </strong>
+  :<ul>
     <li>How fluent is your Dutch?</li>
     <li>
       How different do you find the Dutch culture compared to your home
@@ -176,74 +287,107 @@ import "react-alice-carousel/lib/alice-carousel.css";
     </li>
   </ul>
 </Text>
-<Images>
-  <img src="../../../fmp/testing4.JPG" />
-</Images>
-<Annotation>
-  Upon completion, participants have the option to wear special glasses that
-  utilise the anaglyph effect, allowing them to uncover hidden texts that reveal
-  deeper meanings associated with each question.
-</Annotation>
 <Text>
-  The deeper meaning associated with each question are:
+  The theory associated with each question are:
   <ul>
-    <li>How fluent is your Dutch?</li> When you are an adult, mastering the
-    Dutch language is challenging, especially when having highly demanding work,
-    education and/or family responsibilities at the same time.
+    <li>
+      <strong>How fluent is your Dutch?</strong>
+    </li>{" "}
+    The language barrier is visible and the first barrier for foreign-born
+    residents. Language is a key vehicle for migrant to access and experience
+    services of the host society smoothly and the competency facilitates the
+    sense of belonging (Erlinghagen et al., 2021). People generally need to rely
+    on others or tools to navigate
     <br />
     <br />
     <li>
-      How different do you find the Dutch culture compared to your home
-      environment?
+      <strong>
+        How different do you find the Dutch culture compared to your home
+        environment?
+      </strong>
     </li>
-    When your home environment culture differs more from the mainstream social
-    culture, it requires more mental energy to understand, adjust to, and find
-    comfort within it. Around 90% of cultural characteristics, such as
-    non-verbal communication or values, are difficult to identify and easy to
-    ignore (Lachner et al., 2015).
+    Cultural distance is defined as the degree to which shared norms and values
+    differ from one country to another (Hofstede, 2001), which influences the
+    design of public service system. Sociocultural adaptation, number of close
+    friends and perceived cultural distance are interrelated. The larger the
+    difference between two cultures, the migrant needs to expend more cognitive
+    efforts in adapting to the difference (Demes & Geeraert, 2014) and is likely
+    to have less close friends (Erlinghagen et al., 2021). Meanwhile, 90% of
+    cultural characteristics, such as non-verbal communication or values, are
+    difficult to identify and easy to ignore (Lachner et al., 2015) and can
+    easily become a significant invisible barrier.
     <br />
     <br />
     <li>
-      How concerned are you about your current visa status in the Netherlands?
+      <strong>
+        How concerned are you about your current visa status in the Netherlands?
+      </strong>
     </li>
-    If you are on a temporary visa, you might feel insecure in the system and
-    fear regarding its renewal. The possibility of having to leave the country
-    without any influence may lead to a hesitation in fully connecting with
-    society. You may also feel hesitant about engaging in public affairs or
-    advocating for your rights due to concerns about the potential impact on
-    your visa.
+    Although most of interview participants are considered as highly skilled
+    immigrant, they still reported the fear of dealing with government and the
+    insecurity in the system. The possibility of having to leave the country
+    without any influence may lead to hesitation in fully engaging in public
+    affairs or advocating for the rights due to concerns about the potential
+    impact on the visa. The subconscious fear invisibly hindered foreign-born
+    residents gain the familiarity with the system through trial and error.
     <br />
     <br />
     <li>
-      How many Dutch locals do you have as close friends in where you live?
+      <strong>
+        How many Dutch locals do you have as close friends in where you live?
+      </strong>
     </li>
-    When you have local friends and actively socialise with them, you feel more
-    connected and interested in the place you live in.
+    Friendships are indispensable to individuals’ opportunities and to their
+    integration into the society (Erlinghagen et al., 2021). Additionally,
+    locals have more information resources within the society. For example,
+    locals have more knowledge in applying for benefits and solving certain
+    issues, like housing or tax. Having strong social network with the locals
+    makes it easier for migrant to navigate the system and have access to
+    broader opportunities in the emigration country (Erlinghagen et al., 2021).
     <br />
     <br />
     <li>
-      In challenging situations, such as dealing with tax matters, what is your
-      first resource?
+      <strong>
+        In challenging situations, such as dealing with tax matters, what is
+        your first resource?
+      </strong>
     </li>
-    When you don’t have someone local to support and help you in navigating
-    bureaucratic tasks, you may feel frustrated and overwhelmed. Whereas, when
-    you know someone who can guide you, it feels reassuring and secure.
-    <br />
-    <br />
-    <li>How interested are you in discussing Dutch news with others?</li>
-    When you are engaged with the news, it means that you are up to date with
-    one of the most significant information sources, and being connected to
-    society.
+    Both Dutch and foreign residents struggled with bureaucracy and jargon when
+    dealing with taxes. However, many Dutch natives first seek help from
+    parents, relatives, partners, or close friends. On the other hand, foreign
+    young adults typically translate Dutch documents or search for solutions
+    online as their initial response. Migrants, especially new arrivals, are
+    less likely to have family and strong ties in the host country. Handling tax
+    issues requires support from strong ties due to the sensitive and personal
+    nature of the information involved, which might be uncomfortable to share
+    with weak ties (Erlinghagen et al., 2021). Failure to address the
+    bureaucratic task can lead to feelings of loneliness and powerlessness.
     <br />
     <br />
     <li>
-      How interested are you in participating in Dutch elections if you are
-      eligible to do so?
+      <strong>
+        How interested are you in discussing Dutch news with others?
+      </strong>
     </li>
-    When you express interest in participating in dutch elections, it signifies
-    that you are actively represented, increasing the likelihood that your voice
-    will be heard in policy-making processes and efforts to bring about
-    meaningful change.
+    The significance of the local news is underestimated. Local news is an
+    important channel for people to access information source. Keeping update to
+    the news and having a social discussion with others are important for people
+    to have access to relevant information sources and feel socially connected.
+    <br />
+    <br />
+    <li>
+      <strong>
+        {" "}
+        How interested are you in participating in Dutch elections if you are eligible
+        to do so?
+      </strong>
+    </li>
+    Although there are legislation prohibiting foreign residents from voting,
+    the clause "if you are eligible to do so" was added to focus on the pure
+    motivation aspect of voting. This question focuses on connecting with the
+    society on a next level, and being represented in the country’s decision
+    making. It serves as an end question because all previous answers
+    potentially influence the response to this last question.
     <br />
     <br />
   </ul>
@@ -255,13 +399,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 ##### References:
 
 <div>
-  Herbert, S. (2017). Conflict analysis: Topic guide. Birmingham, UK: GSDRC,
-  University of Birmingham.
+  Demes, K. A., & Geeraert, N. (2014). Measures Matter: Scales for Adaptation,
+  Cultural Distance, and Acculturation Orientation Revisited. Journal of
+  Cross-Cultural Psychology, 45(1), 91–109.
+  https://doi.org/10.1177/0022022113487590
 </div>
 <br />
 <div>
-  CBS (2022). How many people immigrate to the Netherlands? Statistics
-  Netherlands.
+  Statistics Netherlands (2022). How many people immigrate to the Netherlands?
+  Statistics Netherlands.
   https://www.cbs.nl/en-gb/dossier/migration-and-integration/how-many-people-immigrate-to-the-netherlands-
 </div>
 <br />
@@ -276,4 +422,21 @@ import "react-alice-carousel/lib/alice-carousel.css";
   Cultural Differences. In P. L. P. Rau (Ed.), Cross-Cultural Design Methods,
   Practice and Impact (Vol. 9180, pp. 58–70). Springer International Publishing.
   https://doi.org/10.1007/978-3-319-20907-4_6
+</div>
+<br />
+<div>
+  Erlinghagen, M., Ette, A., Schneider, N. F., & Witte, N. (Eds.). (2021). The
+  Global Lives of German Migrants: Consequences of International Migration
+  Across the Life Course. Springer International Publishing.
+  https://doi.org/10.1007/978-3-030-67498-4
+</div>
+<br />
+<div>
+  Herbert, S. (2017). Conflict analysis: Topic guide. Birmingham, UK: GSDRC,
+  University of Birmingham.
+</div>
+<br />
+<div>
+  Hofstede, G. (2001). Culture’s Consequences: Comparing Values, Behaviors,
+  Institutions and Organizations Across Nations. SAGE.
 </div>

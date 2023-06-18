@@ -6,6 +6,7 @@ type ProjectCardProps = {
   link: string;
   title: string;
   status: string;
+  individual: boolean;
   children: React.ReactNode;
   bg: string;
   keywords: string[];
@@ -16,6 +17,7 @@ const ProjectCard = ({
   link,
   title,
   status,
+  individual,
   children,
   bg,
   keywords,
