@@ -46,15 +46,9 @@ const ProjectCard = ({
     }}
   >
     <div sx={{ margin: `-20px 0px 30px 0px` }}>
-      {status === "Coming soon" ? (
-        <Badge pill warning>
-          {status}
-        </Badge>
-      ) : (
-        <Badge pill success>
-          {status}
-        </Badge>
-      )}
+      <Badge pill success>
+        {status}
+      </Badge>
     </div>
     <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
       {children}
