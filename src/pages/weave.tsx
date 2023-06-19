@@ -3,7 +3,7 @@ import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner";
 import FMPContent from "../@lekoarts/gatsby-theme-cara/components/fmp";
 
-const FMP = () => (
+const Weave = () => (
   <Layout>
     <Inner>
       <FMPContent />
@@ -11,4 +11,4 @@ const FMP = () => (
   </Layout>
 );
 
-export default FMP;
+export default Weave;
