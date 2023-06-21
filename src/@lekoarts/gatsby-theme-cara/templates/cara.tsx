@@ -11,8 +11,8 @@ const Cara = () => (
     <Inner>
       <Hero />
       <About />
+      <Projects />
     </Inner>
-    <Projects />
     <Contact />
   </Layout>
 );
