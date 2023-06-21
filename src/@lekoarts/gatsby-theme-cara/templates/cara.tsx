@@ -4,11 +4,14 @@ import Hero from "../components/hero";
 import Projects from "../components/projects";
 import About from "../components/about";
 import Contact from "../components/contact";
+import Inner from "../elements/inner";
 
 const Cara = () => (
   <Layout>
-    <Hero />
-    <About />
+    <Inner>
+      <Hero />
+      <About />
+    </Inner>
     <Projects />
     <Contact />
   </Layout>
