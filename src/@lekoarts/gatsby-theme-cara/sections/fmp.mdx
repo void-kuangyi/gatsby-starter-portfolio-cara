@@ -18,7 +18,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 <Text>
   In 2022, 401,351 persons immigrated to the Netherlands(Statistics
-  Netherlands,2022). When foreign-born adults navigate the Dutch public system,
+  Netherlands,2022). When foreign-born adults navigate the Dutch public system,{" "}
   <strong>
     language is often viewed as the visible barrier while beneath the surface
     lies numerous additional invisible barriers stemming from cultural
@@ -39,26 +39,43 @@ import "react-alice-carousel/lib/alice-carousel.css";
   introspect, and engage in discussions.
   <br />
   <br />
+  The project employs metaphors to help audiences interpret the discursive
+  artefact. The more challenging options are placed higher to symbolise the
+  effort required to climb over these metaphorical mountains. The entire
+  design's shape is alike an iceberg, linking to the cultural iceberg model
+  suggesting that "90% of cultural characteristics, such as non-verbal
+  communication or values, are difficult to identify and easy to ignore"
+  (Lachner et al., 2015). The deeper audience go down the iceberg, the more
+  invisible the barriers are. The glasses symbolises a shift in perspective,
+  inviting viewers to put themselves in others' shoes and seeing from others'
+  eyes, as all the hidden sentences start with “when you are”.
+</Text>
+<img src="../../../fmp/final4.jpg" />
+<Annotation>
+  Participants can pick up a thread that corresponds to their country of origin.
+  If they identify as Dutch, they choose the blue thread, otherwise they choose
+  the red thread.
+</Annotation>
+<img src="../../../fmp/final1.jpg" />
+<Annotation>
   By threading individual responses to each question, people contribute to
   creating a data map, sharing their personal journey of navigating the Dutch
-  public system. Upon completion, wearing the special glasses offers a fresh
-  perspective, unveiling hidden texts that reveal deeper meanings behind each
-  question.
-  <br />
-  <br />
-  The project employs metaphors to help audiences interpret the discursive artefact.
-  The more challenging options are placed higher to symbolise the effort required
-  to climb over these metaphorical mountains. The entire design's shape is alike
-  an iceberg, linking to the cultural iceberg model suggesting that "90% of cultural
-  characteristics, such as non-verbal communication or values, are difficult to identify
-  and easy to ignore" (Lachner et al., 2015). The deeper audience go down the iceberg,
-  the more invisible the barriers are. The glasses symbolises a shift in perspective,
-  inviting viewers to put themselves in others' shoes and seeing from others' eyes,
-  as all the hidden sentences start with “when you are”.
-</Text>
-<img src="../../../fmp/final1.jpg" />
+  public system.{" "}
+</Annotation>
 <img src="../../../fmp/final2.jpg" />
-<img src="../../../fmp/final4.jpg" />
+<Annotation>
+  Upon completion, wearing the special glasses offers a fresh perspective,
+  unveiling hidden texts that reveal deeper meanings behind each question.
+</Annotation>
+<iframe
+  width="100%"
+  height="500"
+  src="https://www.youtube.com/embed/9p7046SwW0s"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen5
+></iframe>
 
 <Title>
   <h3>Interaction</h3>
@@ -67,17 +84,26 @@ import "react-alice-carousel/lib/alice-carousel.css";
 <img src="../../../fmp/interaction2.jpg" />
 <img src="../../../fmp/interaction3.jpg" />
 <img src="../../../fmp/interaction4.jpg" />
-
+<Annotation>Exhibit at TU/e graduation demo day</Annotation>
+<img src="../../../fmp/interaction5.jpg" />
+<img src="../../../fmp/interaction6.jpg" />
+<Annotation>The data map after an one-day exhibit</Annotation>
 <Title>
   <h3>Design Process</h3>
 </Title>
 <img src="../../../fmp/process.png" />
+<Annotation>
+  Triple Diamond including three stages: define, design, develop
+</Annotation>
 <Text title="Define">
-  The first stage centered on the question "What are the underlying barriers
-  faced by foreign-residents when they navigating the Dutch public system and
-  how are these interconnected at a systemic level?" The activities involved in
-  this stage include relation mapping, eight semi-structured interviews with 5
-  foreign residents and 3 Dutch residents.
+  The first stage centered on the question{" "}
+  <strong>
+    "What are the underlying barriers faced by foreign-residents when they
+    navigating the Dutch public system and how are these interconnected at a
+    systemic level?"
+  </strong>{" "}
+  The activities involved in this stage include relation mapping, eight
+  semi-structured interviews with 5 foreign residents and 3 Dutch residents.
   <br />
   <br />
   <AliceCarousel
@@ -111,11 +137,23 @@ import "react-alice-carousel/lib/alice-carousel.css";
       />,
     ]}
   />
-  <Annotation>Interviews</Annotation>
+  <Annotation>Semi-structured interviews</Annotation>
   <img src="../../../fmp/theory1.png" />
-  <Annotation>Conflict analysis map developed by me</Annotation>
+  <Annotation>
+    Conflict analysis map developed by the designer. Cultural differences were
+    identified as conflicting with building a local social network and
+    understanding the Dutch public system. However, the social network serves as
+    a facilitator for acquiring relevant information, which aids in navigating
+    the public system.
+  </Annotation>
+  Based on this conflict map, a clear distinction between Dutch-born residents and
+  foreign residents emerged. Generally speaking, Dutch residents encounter fewer
+  cultural differences and have a bigger social network, which is highly beneficial
+  in navigating the system. Contrarily, foreign residents typically face more significant
+  cultural differences and have a smaller social network, which hinder the navigation
+  process.
 </Text>
-
+<Gap margin={100} />
 <Text title="Design">
   The second stage concentrates on the question{" "}
   <strong>
@@ -135,9 +173,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
     animationDuration="2000"
     infinite
     controlsStrategy="alternate"
-    autoPlay
     mouseTracking
-    disableButtonsControls
     items={[
       <img
         src="../../../fmp/idea3.png"
@@ -169,17 +205,72 @@ import "react-alice-carousel/lib/alice-carousel.css";
       />,
     ]}
   />
-  <Annotation>Ideations</Annotation>
-  <img src="../../../fmp/lowfi1.jpg" />
-  <img src="../../../fmp/lowfi3.png" />
-  <img src="../../../fmp/lowfi2.jpg" />
-  <Annotation>Form Exploration</Annotation>
-  <img src="../../../fmp/testing4.jpg" />
-  <img src="../../../fmp/testing5.jpg" />
-  <img src="../../../fmp/testing6.jpg" />
+  <Annotation>Four ideations</Annotation>
+  <AliceCarousel
+    animationDuration="2000"
+    infinite
+    mouseTracking
+    controlsStrategy="alternate"
+    items={[
+      <img
+        src="../../../fmp/lowfi1.jpg"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/lowfi2.jpg"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/lowfi3.png"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+    ]}
+  />
+  <Annotation>
+    Exploring different forms of data physicalisation and the threading method
+    through the mountains
+  </Annotation>
+  <AliceCarousel
+    animationDuration="2000"
+    infinite
+    mouseTracking
+    controlsStrategy="alternate"
+    items={[
+      <img
+        src="../../../fmp/testing4.jpg"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/testing5.jpg"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+      <img
+        src="../../../fmp/testing6.jpg"
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
+        role="presentation"
+      />,
+    ]}
+  />
   <Annotation>Low Fidelity Prototype User Test</Annotation>
 </Text>
-
+<Gap margin={100} />
 <Text title="Develop">
   The final stage addresses the question{" "}
   <strong>
@@ -191,17 +282,19 @@ import "react-alice-carousel/lib/alice-carousel.css";
   iterations of form, material, interface exploration, as well as making.
 </Text>
 <img src="../../../fmp/highfi1.jpg" />
+<Annotation>Attaching the reference image to the wood base</Annotation>
 <img src="../../../fmp/highfi2.jpg" />
+<Annotation>Cutting the outer shape</Annotation>
 <img src="../../../fmp/highfi3.jpg" />
+<Annotation>Cutting the slots and painting the edge</Annotation>
 <img src="../../../fmp/highfi4.jpg" />
 <img src="../../../fmp/highfi8.jpg" />
+<Annotation>Assembling</Annotation>
 <AliceCarousel
   animationDuration="2000"
   infinite
   controlsStrategy="alternate"
-  autoPlay
   mouseTracking
-  disableButtonsControls
   items={[
     <img
       src="../../../fmp/highfi5.jpg"
@@ -218,20 +311,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
       role="presentation"
     />,
     <img
-      src="../../../fmp/highfi6.jpg"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-    <img
-      src="../../../fmp/highfi13.jpg"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-    <img
       src="../../../fmp/highfi7.jpg"
       onDragStart={(e) => {
         e.preventDefault();
@@ -239,14 +318,14 @@ import "react-alice-carousel/lib/alice-carousel.css";
       role="presentation"
     />,
     <img
-      src="../../../fmp/highfi9.jpg"
+      src="../../../fmp/highfi14.jpg"
       onDragStart={(e) => {
         e.preventDefault();
       }}
       role="presentation"
     />,
     <img
-      src="../../../fmp/highfi10.jpg"
+      src="../../../fmp/highfi9.jpg"
       onDragStart={(e) => {
         e.preventDefault();
       }}
@@ -261,9 +340,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
     />,
   ]}
 />
-<Annotation>
-  Exploration of anchors, yarn holders, eyewear and needles{" "}
-</Annotation>
+<Annotation>Exploration of other parts of the artefact</Annotation>
 
 <Title>
   <h3>Theory behind Questions</h3>
