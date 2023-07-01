@@ -36,14 +36,16 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-omni-font-loader`,
       options: {
-        typekit: {
-          id: "fso2bmt",
-        },
-        google: {
-          families: [],
-        },
+        enableListener: true,
+        preconnect: ["https://fonts.adobe.com/fonts/"],
+        web: [
+          {
+            name: `Scandia line`,
+            file: `https://use.typekit.net/fso2bmt.css`,
+          },
+        ],
       },
     },
     `gatsby-plugin-gatsby-cloud`,
