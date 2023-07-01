@@ -1,5 +1,3 @@
-require(`dotenv`).config();
-
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
@@ -35,6 +33,17 @@ module.exports = {
         // theme_color: `#f6ad55`,
         display: `standalone`,
         icons: [],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: "fso2bmt",
+        },
+        google: {
+          families: [],
+        },
       },
     },
     `gatsby-plugin-gatsby-cloud`,

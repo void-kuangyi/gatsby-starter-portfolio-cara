@@ -66,6 +66,8 @@ const ProjectCard = ({
         fontSize: [4, 5],
         fontWeight: `medium`,
         lineHeight: 1,
+        fontFamily: "scandia-line-web-stencil, sans-serif",
+        fontStyle: "normal",
       }}
     >
       {title}

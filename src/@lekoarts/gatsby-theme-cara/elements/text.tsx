@@ -15,6 +15,9 @@ const Text = ({ title, children }: TextProps) => (
     <div
       sx={{
         color: `black`,
+        fontFamily: "scandia-line-web, sans-serif",
+        fontWeight: 700,
+        fontStyle: "normal",
       }}
     >
       <h2>{title}</h2>
