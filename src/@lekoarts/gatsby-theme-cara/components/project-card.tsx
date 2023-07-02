@@ -57,7 +57,7 @@ const ProjectCard = ({
           {status}
         </Badge>
       ) : (
-        <Badge pill success>
+        <Badge pill secondary>
           {status}
         </Badge>
       )}
