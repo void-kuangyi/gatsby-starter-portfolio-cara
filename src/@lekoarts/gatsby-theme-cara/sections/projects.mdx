@@ -1,17 +1,7 @@
 import { Badge } from "styled-badge-component";
+import "../styles/index.css";
 
 ## Projects
-
-<ProjectCard
-  title="Story Narrative Tool"
-  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-  status="Coming soon"
-  individual={true}
-  keywords={["storytelling", "programming", "UX/UI design"]}
->
-  An interactive narrative tool to help probe participant responses to design
-  stories during clinical trial
-</ProjectCard>
 
 <ProjectCard
   title="Weave"
@@ -19,6 +9,7 @@ import { Badge } from "styled-badge-component";
   link="/weave"
   individual={true}
   status="Completed"
+  className="weave"
   keywords={[
     "discursive design",
     "data physicalisation",
@@ -35,6 +26,7 @@ import { Badge } from "styled-badge-component";
   status="Completed"
   individual={true}
   bg="url(wind/front.png)"
+  className="wind"
   link="/wind"
   keywords={["lego house", "learning through play", "play with nature"]}
 >
@@ -46,6 +38,7 @@ import { Badge } from "styled-badge-component";
   bg="url(jenga/jenga0.JPG)"
   status="Completed"
   individual={true}
+  className="vulnerability"
   link="/jenga"
   keywords={[
     "jenga",
@@ -63,6 +56,7 @@ import { Badge } from "styled-badge-component";
   individual={true}
   status="Completed"
   link="/seasaw"
+  className="seasaw"
   keywords={["children", "controlled risk", "knife", "embodied movement", "playfulness"]}
   textColor="black"
 >
@@ -74,6 +68,7 @@ import { Badge } from "styled-badge-component";
   status="Completed"
   individual={true}
   link="/flow"
+  className="flow"
   keywords={[
     "design research",
     "children",
@@ -87,8 +82,9 @@ How do space-changing elements influence children’s social interaction in play
 
 <ProjectCard
   title="Nebula"
-  bg="url(nebula/poster3.jpg)"
+  bg="url(nebula.jpg)"
   status="Completed"
+  className="nebula"
   link="/nebula"
   keywords={[
     "inclusive design",
@@ -98,6 +94,18 @@ How do space-changing elements influence children’s social interaction in play
   ]}
 >
   A haptic navigational belt for the visually impaired
+</ProjectCard>
+
+<ProjectCard
+  title="Story Narrative Tool"
+  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+  status="Completed"
+  individual={true}
+  className="narrative"
+  keywords={["storytelling", "programming", "UX/UI design"]}
+>
+  An interactive narrative tool to help probe participant responses to design
+  stories during clinical trial
 </ProjectCard>
 
 <!--  <ProjectCard
@@ -125,6 +133,7 @@ keywords={["pragmatism philosophy"]}
   bg="url(vinylify/vinylify.jpeg)"
   link="/vinylify"
   status="Completed"
+  className="vinylify"
   keywords={[
     "design research",
     "vinyl",
@@ -154,6 +163,7 @@ keywords={["pragmatism philosophy"]}
   bg="url(wemagine/background.png)"
   status="Completed"
   link="/wemagine"
+  className="wemagine"
   keywords={[
     "digital art",
     "business & entrepreneurship",

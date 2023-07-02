@@ -11,6 +11,7 @@ type ProjectCardProps = {
   bg: string;
   keywords: string[];
   textColor?: string;
+  className?: string;
 };
 
 const ProjectCard = ({
@@ -18,6 +19,7 @@ const ProjectCard = ({
   title,
   status,
   individual,
+  className,
   children,
   bg,
   keywords,
@@ -26,7 +28,11 @@ const ProjectCard = ({
   <a
     href={link}
     rel="noreferrer noopener"
+    className={className}
     sx={{
+      display: `flex`,
+      flexDirection: `column`,
+      justifyContent: `space-between`,
       width: `100%`,
       boxShadow: `lg`,
       position: `relative`,
@@ -56,36 +62,45 @@ const ProjectCard = ({
         </Badge>
       )}
     </div>
-    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
-      {children}
+    <div>
+      <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
+        {children}
+      </div>
+      <div
+        sx={{
+          letterSpacing: `wide`,
+          pt: 4,
+          fontSize: [4, 5],
+          fontWeight: `medium`,
+          lineHeight: 1,
+          fontFamily: "scandia-line-web-stencil, sans-serif",
+          fontStyle: "normal",
+        }}
+      >
+        {title}
+      </div>
     </div>
     <div
       sx={{
-        letterSpacing: `wide`,
-        pt: 4,
-        fontSize: [4, 5],
-        fontWeight: `medium`,
-        lineHeight: 1,
-        fontFamily: "scandia-line-web-stencil, sans-serif",
-        fontStyle: "normal",
-      }}
-    >
-      {title}
-    </div>
-    <div
-      sx={{
-        marginTop: `30px`,
-        marginBottom: `-20px`,
         display: `flex`,
-        flexWrap: `wrap`,
-        gap: `10px`,
+        alignItems: `flex-end`,
       }}
     >
-      {keywords.map((keyword, index) => (
-        <Badge pill light key={index}>
-          {keyword}
-        </Badge>
-      ))}
+      <div
+        sx={{
+          marginTop: `30px`,
+          marginBottom: `-20px`,
+          display: `flex`,
+          flexWrap: `wrap`,
+          gap: `10px`,
+        }}
+      >
+        {keywords.map((keyword, index) => (
+          <Badge pill light key={index}>
+            {keyword}
+          </Badge>
+        ))}
+      </div>
     </div>
   </a>
 );
