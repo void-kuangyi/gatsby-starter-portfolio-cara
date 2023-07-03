@@ -51,7 +51,16 @@ const ProjectCard = ({
       },
     }}
   >
-    <div sx={{ margin: `-20px 0px 30px 0px` }}>
+    <div
+      sx={{
+        margin: `-20px 0px 30px 0px`,
+        display: `flex`,
+        flexDirection: `column`,
+        flexWrap: `wrap`,
+        gap: `10px`,
+        alignItems: `flex-start`,
+      }}
+    >
       {status === "Coming soon" ? (
         <Badge pill warning>
           {status}
@@ -61,11 +70,34 @@ const ProjectCard = ({
           {status}
         </Badge>
       )}
+      {collab && (
+        <Badge pill secondary>
+          {collab}
+        </Badge>
+      )}
     </div>
     <div>
-      <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
-        {children}
-      </div>
+      {textColor == "black" ? (
+        <div
+          sx={{
+            textShadow: `1px 2px 2px rgba(0, 0, 0, 0.2)`,
+            fontWeight: 500,
+            fontSize: 1,
+          }}
+        >
+          {children}
+        </div>
+      ) : (
+        <div
+          sx={{
+            textShadow: `1px 2px 7px rgba(0, 0, 0)`,
+            fontWeight: 500,
+            fontSize: 1,
+          }}
+        >
+          {children}
+        </div>
+      )}
       <div
         sx={{
           letterSpacing: `wide`,
