@@ -6,6 +6,7 @@ type ProjectCardProps = {
   link: string;
   title: string;
   status: string;
+  collab?: string;
   individual: boolean;
   children: React.ReactNode;
   bg: string;
@@ -19,6 +20,7 @@ const ProjectCard = ({
   title,
   status,
   individual,
+  collab,
   className,
   children,
   bg,
