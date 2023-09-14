@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
-import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner";
-import ArgonautContent from "../@lekoarts/gatsby-theme-cara/components/argonaut";
+import Inner from "../@lekoarts/gatsby-theme-cara/elements/inner";
+import ArgonautContent from "../@lekoarts/gatsby-theme-cara/sections/argonaut";
 
 const Argonaut = () => (
   <Layout>
