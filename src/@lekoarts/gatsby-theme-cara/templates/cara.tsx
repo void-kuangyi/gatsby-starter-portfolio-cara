@@ -8,9 +8,6 @@ import Contact from "../components/contact";
 const Cara = () => (
   <Layout>
     <div>
-      <a href="/">Projects</a>
-      <a href="/">About me</a>
-      <a href="/">Contact</a>
       <Hero />
       <Projects />
       <About />
