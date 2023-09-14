@@ -15,25 +15,7 @@ const Footer = () => {
           fontWeight: `semibold`,
           a: { color: `text` },
         }}
-      >
-        <div>
-          Copyright &copy; {new Date().getFullYear()}. All rights reserved.
-        </div>
-        <div>
-          <img
-            width="30"
-            height="30"
-            src="https://img.lekoarts.de/gatsby/logo_v2_w30.png"
-            alt="LekoArts Logo"
-          />
-          <Link
-            aria-label="Link to the theme author's website"
-            href="https://www.lekoarts.de?utm_source=cara&utm_medium=Theme"
-          >
-            Theme by LekoArts
-          </Link>
-        </div>
-      </Flex>
+      ></Flex>
     </Box>
   );
 };
