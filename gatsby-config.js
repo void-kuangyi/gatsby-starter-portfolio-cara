@@ -18,8 +18,9 @@ module.exports = {
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
-      options: {},
+      options: { mdx: false },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -33,6 +34,14 @@ module.exports = {
         // theme_color: `#f6ad55`,
         display: `standalone`,
         icons: [],
+      },
+    },
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/@lekoarts/gatsby-theme-cara/sections`,
       },
     },
     {
