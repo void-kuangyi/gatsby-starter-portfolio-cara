@@ -22,10 +22,11 @@ const Layout = ({ children }: LayoutProps) => (
           margin: `0 0 0 0`,
         },
         html: {
-          fontSize: `18px`,
-          fontWeight: 600,
-          fontFamily: `scandia-line-web, sans-serif`,
           WebkitTextSizeAdjust: `100%`,
+          fontSize: `18px`,
+          fontWeight: 400,
+          fontFamily: `scandia-line-web, sans-serif`,
+          color: "#000",
         },
         img: {
           borderStyle: `none`,

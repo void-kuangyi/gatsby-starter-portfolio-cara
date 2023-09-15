@@ -6,16 +6,21 @@ import { useLocation } from "react-router-dom";
 const NavBar = () => {
   const location = useLocation();
   useEffect(() => {
-    const links = document.querySelectorAll("a");
-    links.forEach((link) => {
-      if (link.getAttribute("href") === location.pathname) {
-        link.classList.add("active");
-      }
-    });
+    var link;
+    if (location.pathname === "/about") {
+      link = document.getElementById("about");
+    } else if (location.pathname === "/contact") {
+      link = document.getElementById("contact");
+    } else {
+      link = document.getElementById("projects");
+    }
+    link.classList.add("active");
   }, [location]);
   return (
     <div className="header">
-      <div className="logo">Kuangyi Xing</div>
+      <a href="/">
+        <div className="logo">Kuangyi Xing</div>
+      </a>
       <div className="menu">
         <a href="/" className="link" id="projects">
           <div className="title">Projects</div>

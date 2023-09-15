@@ -16,11 +16,10 @@ const Text = ({ title, children }: TextProps) => (
       sx={{
         color: `black`,
         fontFamily: "scandia-line-web, sans-serif",
-        fontWeight: 700,
         fontStyle: "normal",
       }}
     >
-      <h2>{title}</h2>
+      <h4>{title}</h4>
     </div>
     <div>{children}</div>
   </div>

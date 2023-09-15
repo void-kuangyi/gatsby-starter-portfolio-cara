@@ -82,8 +82,7 @@ const ProjectCard = ({
       {textColor == "black" ? (
         <div
           sx={{
-            textShadow: `1px 2px 2px rgba(0, 0, 0, 0.2)`,
-            fontWeight: 500,
+            fontWeight: 600,
             fontSize: 1,
           }}
         >
@@ -93,7 +92,7 @@ const ProjectCard = ({
         <div
           sx={{
             textShadow: `1px 2px 7px rgba(0, 0, 0)`,
-            fontWeight: 500,
+            fontWeight: 600,
             fontSize: 1,
           }}
         >
