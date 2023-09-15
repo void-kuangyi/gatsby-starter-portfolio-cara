@@ -19,10 +19,12 @@ const Layout = ({ children }: LayoutProps) => (
           },
         },
         main: {
-          margin: `100px 0 0 0`,
+          margin: `0 0 0 0`,
         },
         html: {
           fontSize: `18px`,
+          fontWeight: 600,
+          fontFamily: `scandia-line-web, sans-serif`,
           WebkitTextSizeAdjust: `100%`,
         },
         img: {
@@ -33,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => (
           height: `auto`,
         },
         pre: {
-          fontFamily: `monospace`,
+          fontFamily: `scandia-line-web, sans-serif`,
           fontSize: `1em`,
         },
         "[hidden]": {

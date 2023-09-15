@@ -1,14 +1,11 @@
 import * as React from "react";
-import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
-import Inner from "../@lekoarts/gatsby-theme-cara/elements/inner";
 import NarrativeContent from "../@lekoarts/gatsby-theme-cara/sections/narrative";
+import ContentLayout from "../@lekoarts/gatsby-theme-cara/components/content-layout";
 
 const Narrative = () => (
-  <Layout>
-    <Inner>
-      <NarrativeContent />
-    </Inner>
-  </Layout>
+  <ContentLayout>
+    <NarrativeContent />
+  </ContentLayout>
 );
 
 export default Narrative;

@@ -1,13 +1,13 @@
 import * as React from "react";
-import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
 import Inner from "../@lekoarts/gatsby-theme-cara/elements/inner";
-import DalleContent from "../@lekoarts/gatsby-theme-cara/sections/dalle";
+// @ts-ignore
+import AboutMDX from "../@lekoarts/gatsby-theme-cara/sections/about";
 import ContentLayout from "../@lekoarts/gatsby-theme-cara/components/content-layout";
 
-const Dalle = () => (
+const About = () => (
   <ContentLayout>
-    <DalleContent />
+    <AboutMDX />
   </ContentLayout>
 );
 
-export default Dalle;
+export default About;
