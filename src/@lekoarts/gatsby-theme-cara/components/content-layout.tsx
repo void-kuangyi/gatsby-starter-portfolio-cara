@@ -1,5 +1,5 @@
 import * as React from "react";
-import NavBar from "./Navbar";
+import NavBar from "./navbar";
 import Layout from "./layout";
 import Inner from "../elements/inner";
 import Animation from "./animation";
