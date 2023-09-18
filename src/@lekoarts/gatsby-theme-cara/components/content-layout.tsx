@@ -9,9 +9,7 @@ type LayoutProps = { children: React.ReactNode };
 
 const ContentLayout = ({ children }: LayoutProps) => (
   <div>
-    <Router>
-      <NavBar />
-    </Router>
+    <NavBar />
     <Layout>
       <Inner>{children}</Inner>
       <Animation />

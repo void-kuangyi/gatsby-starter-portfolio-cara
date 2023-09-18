@@ -1,34 +1,45 @@
 import * as React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../styles/index.css";
 import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
-  const location = useLocation();
+  const [active, setActive] = useState("");
   useEffect(() => {
-    var link;
-    if (location.pathname === "/about") {
-      link = document.getElementById("about");
-    } else if (location.pathname === "/contact") {
-      link = document.getElementById("contact");
+    const path = window.location.pathname;
+    if (path === "/about/") {
+      setActive("about");
+    } else if (path === "/contact/") {
+      setActive("contact");
     } else {
-      link = document.getElementById("projects");
+      setActive("projects");
     }
-    link.classList.add("active");
-  }, [location]);
+  });
   return (
     <div className="header">
       <a href="/">
         <div className="logo">Kuangyi Xing</div>
       </a>
       <div className="menu">
-        <a href="/" className="link" id="projects">
+        <a
+          href="/"
+          className={active === "projects" ? "link active" : "link"}
+          id="projects"
+        >
           <div className="title">Projects</div>
         </a>
-        <a href="/about" className="link" id="about">
+        <a
+          href="/about"
+          className={active === "about" ? "link active" : "link"}
+          id="about"
+        >
           <div className="title">About me</div>
         </a>
-        <a href="/contact" className="link" id="contact">
+        <a
+          href="/contact"
+          className={active === "contact" ? "link active" : "link"}
+          id="contact"
+        >
           <div className="/contact">Contact</div>
         </a>
       </div>
