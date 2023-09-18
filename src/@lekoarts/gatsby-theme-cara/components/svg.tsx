@@ -97,6 +97,7 @@ const Svg = ({
 }: SVGProps) => (
   <svg
     sx={{
+      zIndex: -1,
       position: `absolute`,
       stroke: stroke ? `currentColor` : `none`,
       fill: stroke ? `none` : `currentColor`,

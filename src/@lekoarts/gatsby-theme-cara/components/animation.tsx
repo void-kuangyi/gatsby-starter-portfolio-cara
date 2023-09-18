@@ -4,6 +4,14 @@ import Svg from "./svg";
 
 const Animation = () => (
   <div>
+    <Svg
+      icon="circle"
+      hiddenMobile
+      width={6}
+      color="icon_brightest"
+      left="4%"
+      top="20%"
+    />
     <UpDown>
       <Svg icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
       <Svg
@@ -50,14 +58,6 @@ const Animation = () => (
         top="10%"
       />
     </UpDownWide>
-    <Svg
-      icon="circle"
-      hiddenMobile
-      width={6}
-      color="icon_brightest"
-      left="4%"
-      top="20%"
-    />
   </div>
 );
 
