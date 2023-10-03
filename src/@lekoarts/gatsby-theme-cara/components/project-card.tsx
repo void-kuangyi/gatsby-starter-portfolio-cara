@@ -37,7 +37,7 @@ const ProjectCard = ({
       sx={{
         display: `flex`,
         flexDirection: `column`,
-        justifyContent: `flex-end`,
+        justifyContent: `space-between`,
         width: `100%`,
         boxShadow: `lg`,
         position: `relative`,
@@ -56,31 +56,30 @@ const ProjectCard = ({
         },
       }}
     >
-      {/* <div
-      sx={{
-        margin: `-20px 0px 30px 0px`,
-        display: `flex`,
-        flexDirection: `column`,
-        flexWrap: `wrap`,
-        gap: `10px`,
-        alignItems: `flex-start`,
-      }}
-    >
-      {status === "Coming soon" ? (
-        <Badge pill warning>
-          {status}
-        </Badge>
-      ) : (
-        <Badge pill secondary>
-          {status}
-        </Badge>
-      )}
-      {collab && (
-        <Badge pill secondary>
-          {collab}
-        </Badge>
-      )}
-    </div> */}
+      <div
+        sx={{
+          display: `flex`,
+          flexDirection: `column`,
+          flexWrap: `wrap`,
+          gap: `10px`,
+          alignItems: `flex-start`,
+        }}
+      >
+        {status === "Coming soon" ? (
+          <Badge pill warning>
+            {status}
+          </Badge>
+        ) : (
+          <Badge pill light>
+            {status}
+          </Badge>
+        )}
+        {collab && (
+          <Badge pill light>
+            {collab}
+          </Badge>
+        )}
+      </div>
       <div>
         <div
           sx={{
