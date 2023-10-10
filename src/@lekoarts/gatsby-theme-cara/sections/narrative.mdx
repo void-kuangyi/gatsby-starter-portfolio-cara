@@ -1,81 +1,82 @@
+import Gallery from "react-photo-gallery";
 import Gap from "../elements/gap.tsx";
 import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Annotation from "../elements/annotation.tsx";
 import Title from "../elements/title.tsx";
 import Images from "../elements/images.tsx";
+import TextLayout from "../elements/textlayout.tsx";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-# Story Narrative Tool
+<TextLayout>
+  <h4>Narrative Tool</h4>
+  <h5>
+    Empower healthcare researchers to build engaging storytelling survey with
+    ease
+  </h5>
+  <br />
+  <br />
+  2023 <br />
+  Individual
+  <br />
+  Client: <a href="https://www.unusualcollaborations.com/the-power-of-one">
+    {" "}
+    Center for Unusual Collaboration, the Netherlands
+  </a>
+  <br />
+  Keywords: programming, data visualisation, UI/UX design
+</TextLayout>
+<Gap margin={30} />
+<Gallery
+  photos={[
+    {
+      src: "../../../narrative/designsystem.jpg",
+      width: 842,
+      height: 1191,
+    },
+    {
+      src: "../../../narrative/title.jpg",
+      width: 7,
+      height: 5,
+    },
+    {
+      src: "../../../narrative/demo1.jpg",
+      width: 7,
+      height: 5,
+    },
+  ]}
+/>
 
-##### An interactive narrative tool to probe participant responses to design stories during clinical trial
-
-<Gap margin={200} />
-
-<Text>
-  Stories have been used as a resource in design ever since the shift to user-
-  and human-centered design. They are a great way to put user values center
+<TextLayout> 
+<Text title="Description">
+  Stories have been used as a resource in design. They are a great way to put user values center
   stage, and to develop technology solutions that prioritise those values.
   However, design stories and scenarios are often constructed within the design
-  studio, or with a limited set of users. With an online interactive narrative
-  tool, more diverse users are brought into the design process.
+  studio, or with a limited set of users. 
   <br />
   <br />
-  This project aims to design and develop an interactive narrative tool to probe
-  participant responses to design stories and track their activities for researchers'
-  further research.
-  <br />
-  <br />
-  This tool is part of research being conducted by{" "}
-  <a href="https://research.tue.nl/en/persons/renee-r-noortman">
-    Renee Noortman
-  </a>{" "}
-  and{" "}
-  <a href="https://www.tue.nl/en/research/researchers/mathias-funk">
-    Mathias Funk
-  </a>
-  , in collaboration with <a href="https://www.unusualcollaborations.com/the-power-of-one"> Center for Unusual Collaboration - Power Of One.</a>
+  This project aims to design and develop a narrative tool that empowers researchers to build engaging storytelling surveys with a simplified workflow while also providing a user-friendly dashboard for visualising and tracking participants' responses. 
 </Text>
 
-<Text title="Story Narrative">
-  <a href="https://twinery.org/">Twine</a>, an open-source tool for telling
-  interactive, nonlinear stories, is chosen by me as a base tool to construct
-  the story.
-  <img src="../../../narrative/twine.png" />
-  <Annotation>Twine's interface for creator to construct a story</Annotation>
-  The interface for users is then refined with customised css.
-  <img src="../../../narrative/survey_design.png" />
-  <Annotation>Customised user interface, designed in Figma</Annotation>
-  <img src="../../../narrative/survey.gif" />
-  <Annotation>
-    Story Narrative in production. Hosted on TU/e web server.
-  </Annotation>
+<Text title="Constructing Narrative Stories">
+  I have selected <a href="https://twinery.org/">Twine</a>, an open-source tool
+  designed for creating interactive and nonlinear narratives, as a foundation.
+  The interface is then refined with customised css based on requirements from
+  the clients.
 </Text>
 
-<Text title="Tracking Web">
-  For researchers, participants' responses to the story is tracked with a
-  dashboard.
+<Text title="Data Tracking and Visualisation">
+  Every decision made by the participants within the story is monitored and transferred to a server. The dashboard then utilises this tracking data and presents it in a comprehensible way for the researchers.
   <br />
   <br />
-  It is created with Javascript, React framework and CSS. Functional programming,{" "}
-  <a href="https://d3js.org/">data visualisation library</a> and breadth-first search
-  (BFS) algorithms to traverse and merge data in a tree structure were employeed.
-  The dashboard is hosted on TU/e's web server. The open source code can be found
-  on my <a href="https://github.com/void-kuangyi/Narrative-Tool">
-    github repository.
-  </a>
-  <img src="../../../narrative/research.png" />
-  <Annotation>
-    Figma Design for the tracking dashboard. Participants' data are represented
-    in a tree structrure. Each individual pathway is illustrated or merged with
-    others if they share some parts of the pathway. The circle's size indicates
-    the number of participants choosing this option. Comments were also captured
-    and grouped.
-  </Annotation>
+  I selected tree structures to represent the tracking data, in accordance with the structure of a narrative survey. Each distinct pathway is depicted individually or merged with others when they overlap. The size of the circles corresponds to the number of participants who chose a specific option, and comments were collected and categorised as well.
+  <br />
+  <br />
+  Technology wise, this dashboard is developed with Javascript, the React framework and CSS. A data visualisation library from <a href="https://d3js.org/">D3.js</a> was utilised, along with breadth-first search (BFS) algorithms to navigate traverse and merge data in a tree structure. The source code for this project can be found in my <a href="https://github.com/void-kuangyi/Narrative-Tool">GitHub repository</a>
   <img src="../../../narrative/research_web.gif" />
   <Annotation>
-    Dashboard in production. Researcher can close or expand a specific node to
-    focus.
+    Dashboard in production.
   </Annotation>
 </Text>
+</TextLayout>

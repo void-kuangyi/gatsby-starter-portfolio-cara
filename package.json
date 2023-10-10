@@ -30,6 +30,7 @@
     "react-alice-carousel": "^2.6.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^6.16.0",
     "styled-badge-component": "^4.0.0",
     "styled-components": "^4.4.1"

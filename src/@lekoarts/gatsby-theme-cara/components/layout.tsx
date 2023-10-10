@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => (
         },
         img: {
           borderStyle: `none`,
-          borderRadius: `20px`,
+          borderRadius: `12px`,
           maxWidth: `100%`,
           maxHeight: `100%`,
           height: `auto`,
