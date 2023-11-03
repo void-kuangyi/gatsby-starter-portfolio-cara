@@ -1,4 +1,3 @@
-import Gallery from "react-photo-gallery";
 import Gap from "../elements/gap.tsx";
 import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
@@ -8,6 +7,7 @@ import Images from "../elements/images.tsx";
 import TextLayout from "../elements/textlayout.tsx";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import PhotoGallery from "../elements/gallery.tsx";
 
 <TextLayout>
   <h4>Narrative Tool</h4>
@@ -28,7 +28,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
   Keywords: programming, data visualisation, UI/UX design
 </TextLayout>
 <Gap margin={30} />
-<Gallery
+<PhotoGallery
   photos={[
     {
       src: "../../../narrative/designsystem.jpg",
