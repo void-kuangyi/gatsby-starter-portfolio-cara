@@ -7,6 +7,7 @@ import Annotation from "../elements/annotation.tsx";
 import Title from "../elements/title.tsx";
 import Images from "../elements/images.tsx";
 import AliceCarousel from "react-alice-carousel";
+import PhotoGallery from "../elements/gallery.tsx";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 <TextLayout>
@@ -24,82 +25,96 @@ import "react-alice-carousel/lib/alice-carousel.css";
   <br />
   Keywords: discursive design, data physicalisation, cross-culture, participatory
   design, co-design, metaphors
+  <iframe
+    width="100%"
+    height="500"
+    src="https://www.youtube.com/embed/7MV5PSWcnLk?si=id21AcowWuaorBss"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen5
+  ></iframe>
 </TextLayout>
 
 <Gap margin={30} />
 
-<Text>
-  In 2022, 401,351 persons immigrated to the Netherlands (Statistics
-  Netherlands, 2022). When foreign-born adults navigate the Dutch public system,{" "}
-  <strong>
-    language is often viewed as the visible barrier while beneath the surface
-    lies numerous additional invisible barriers stemming from cultural
-    differences.
-  </strong>
-  <br />
-  <br />
-  <img src="../../../fmp/theory.png" />
-</Text>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../fmp/demo10.JPG",
+      width: 6,
+      height: 4,
+    },
+    {
+      src: "../../../fmp/demo2.JPG",
+      width: 6,
+      height: 4,
+    },
+  ]}
+/>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../fmp/demo1.JPG",
+      width: 6,
+      height: 4,
+    },
+    {
+      src: "../../../fmp/demo11.JPG",
+      width: 6,
+      height: 4,
+    },
+    {
+      src: "../../../fmp/demo12.JPG",
+      width: 6,
+      height: 4,
+    },
+  ]}
+/>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../fmp/demo3.JPG",
+      width: 6,
+      height: 4,
+    },
+    {
+      src: "../../../fmp/demo7.JPG",
+      width: 6,
+      height: 4,
+    },
+    {
+      src: "../../../fmp/demo6.JPG",
+      width: 6,
+      height: 4,
+    },
+    {
+      src: "../../../fmp/demo8.JPG",
+      width: 6,
+      height: 4,
+    },
+  ]}
+/>
 
-<Text>
-  <strong>
-    Weave is a discursive design project encouraging discourse on these
-    challenges.
-  </strong>
-  It aims to raise awareness of invisible barriers faced by foreign residents, especially
-  skilled immigrants, and provide a space for audience to gain exposure to information,
-  introspect, and engage in discussions.
-  <br />
-  <br />
+<TextLayout>
+  <Text>
+    I've spent the last 8 years living abroad, now I am one of 401,351 immigrants in the Netherlands (Statistics
+     Netherlands, 2022). The feeling of being constantly lost and confused when navigating the system inspired me this project. I often thought to myself “If I could just speak fluent Dutch, all my troubles navigating the Dutch public systems would disappear”. However, When foreign-born adults navigate the Dutch public systems, <strong>language was the most visible barriers, tip of the iceberg, while underneath the surface, there lies many invisible barriers, such as visa, cultural differences, local social network, connection with local news, politics etc. </strong>
+    <br /><br />
+    Weave is a project that aim to raise the awareness of those invisible barriers through data physicalisation, and provide a space for audience to gain exposure to information, introspect, and engage in discussions. Participantes are invited to interact with the exhibit, contributing to the data map. People can pick a thread corresponding to their country of origin, and thread individual responses to each question. Upon finishing, they can wear the special glasses that unveil a deeper meaning of each question.
+<br />
+<br />
   The project employs metaphors to help audiences interpret the discursive
   artefact. The more challenging options are placed higher to symbolise the
   effort required to climb over these metaphorical mountains. The entire
-  design's shape is alike an iceberg, linking to the cultural iceberg model
-  suggesting that "90% of cultural characteristics, such as non-verbal
-  communication or values, are difficult to identify and easy to ignore"
-  (Lachner et al., 2015). The deeper audience go down the iceberg, the more
+  design's shape is alike an iceberg, linking to the cultural iceberg model. 
+  The deeper audience go down the iceberg, the more
   invisible the barriers are. The glasses symbolises a shift in perspective,
   inviting viewers to put themselves in others' shoes and seeing from others'
   eyes, as all the hidden sentences start with “when you are”.
 </Text>
-<img src="../../../fmp/final4.jpg" />
-<Annotation>
-  Participants can pick up a thread that corresponds to their country of origin.
-  If they identify as Dutch, they choose the blue thread, otherwise they choose
-  the red thread.
-</Annotation>
-<img src="../../../fmp/final1.jpg" />
-<Annotation>
-  By threading individual responses to each question, people contribute to
-  creating a data map, sharing their personal journey of navigating the Dutch
-  public system.{" "}
-</Annotation>
-<img src="../../../fmp/final2.jpg" />
-<Annotation>
-  Upon completion, wearing the special glasses offers a fresh perspective,
-  unveiling hidden texts that reveal deeper meanings behind each question.
-</Annotation>
-<iframe
-  width="100%"
-  height="500"
-  src="https://www.youtube.com/embed/9p7046SwW0s"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen5
-></iframe>
+<img src="../../../fmp/theory.png" />
 
-<Title>
-  <h3>Interaction</h3>
-</Title>
-<img src="../../../fmp/interaction1.jpg" />
-<img src="../../../fmp/interaction2.jpg" />
-<img src="../../../fmp/interaction3.jpg" />
-<img src="../../../fmp/interaction4.jpg" />
-<Annotation>Exhibit at TU/e graduation demo day</Annotation>
-<img src="../../../fmp/interaction5.jpg" />
-<img src="../../../fmp/interaction6.jpg" />
-<Annotation>The data map after an one-day exhibit</Annotation>
 <Title>
   <h3>Design Process</h3>
 </Title>
@@ -492,7 +507,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
     <br />
   </ul>
 </Text>
-
+</TextLayout>
 <Gap margin={100} />
 <hr />
 
