@@ -44,8 +44,18 @@ import PhotoGallery from "../elements/gallery.tsx";
       width: 7016,
       height: 4961,
     },
+  ]}
+/>
+
+<PhotoGallery
+  photos={[
     {
       src: "../../../narrative/demo1.jpg",
+      width: 7016,
+      height: 4961,
+    },
+    {
+      src: "../../../narrative/demo3.jpg",
       width: 7016,
       height: 4961,
     },
@@ -79,6 +89,7 @@ import PhotoGallery from "../elements/gallery.tsx";
   <br />
   <br />
   I selected tree structures to represent the tracking data, in accordance with the structure of a narrative survey. Each distinct pathway is depicted individually or merged with others when they overlap. The size of the circles corresponds to the number of participants who chose a specific option, and comments were collected and categorised as well.
+   <img src="../../../narrative/demo2.jpg" />
   <br />
   <br />
   Technology wise, this dashboard is developed with Javascript, the React framework and CSS. A data visualisation library from <a href="https://d3js.org/">D3.js</a> was utilised, along with breadth-first search (BFS) algorithms to navigate traverse and merge data in a tree structure. The source code for this project can be found in my <a href="https://github.com/void-kuangyi/Narrative-Tool">GitHub repository</a>
