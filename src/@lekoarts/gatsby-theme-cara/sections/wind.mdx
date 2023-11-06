@@ -3,22 +3,110 @@ import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Title from "../elements/title.tsx";
 import AliceCarousel from "react-alice-carousel";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-# Ride with Wind
+<TextLayout>
+  <h4>Ride with Wind</h4>
+  <h5>A playful experience for Lego House outdoor zone</h5>
+  <br />
+  <br />
+  2022 <br />
+  Individual
+  <br />
+  Collaboration:
+  <a href="https://legohouse.com/da-dk/"> Lego House</a>, Denmark
+  <br />
+  Keywords: learning through play, play with nature, 3D modelling, aerodynamic
+</TextLayout>
 
-<h5>A playful experience for Lego House outdoor zone</h5>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../wind/minifigure.png",
+      width: 1920,
+      height: 1079,
+    },
+    {
+      src: "../../../wind/poster.png",
+      width: 596,
+      height: 843,
+    },
+  ]}
+/>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../wind/iteration1.JPG",
+      width: 4032,
+      height: 3024,
+    },
+    {
+      src: "../../../wind/iteration2.JPG",
+      width: 4032,
+      height: 3024,
+    },
+    {
+      src: "../../../wind/iteration3.png",
+      width: 3823,
+      height: 2151,
+    },
+  ]}
+/>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../wind/digital-sketching.png",
+      width: 2732,
+      height: 2048,
+    },
+    {
+      src: "../../../wind/lego house 35.png",
+      width: 1920,
+      height: 1440,
+    },
+  ]}
+/>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../wind/lego house.png",
+      width: 1920,
+      height: 1440,
+    },
+    {
+      src: "../../../wind/lego house 2.png",
+      width: 1920,
+      height: 1440,
+    },
+    {
+      src: "../../../wind/lego house 3.png",
+      width: 1920,
+      height: 1440,
+    },
+    {
+      src: "../../../wind/lego house 5.png",
+      width: 1920,
+      height: 1440,
+    },
+  ]}
+/>
+<iframe
+  width="100%"
+  height="500"
+  src="https://www.youtube.com/embed/xWhQBq1fHEk"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 
-<img src="../../../wind/minifigure.png" />
-
-<Gap margin={200} />
+<TextLayout>
 <Title>
-  <h3>Introduction</h3>
+  <h4>Introduction</h4>
 </Title>
-<h5>
-  Collaboration with
-  <a href="https://legohouse.com/da-dk/"> Lego House </a>
-</h5>
+
 <Text>
   After a field trip to Lego House in Billund, Denmark, I chose their physical
   outdoor zone because I am interested in outdoor play, and also Lego house's
@@ -28,7 +116,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 <i>The outdoor zone I chose</i>
 
 <Title>
-  <h3>Design Ideas</h3>
+  <h4>Design Ideas</h4>
 </Title>
 <h5>Play with Contrast: a play experience activated by bad weather</h5>
 <Text>
@@ -43,7 +131,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
   A canvas, constructed of special lego bricks, plays music when hit by the rain
   flow
 </i>
-<Text></Text>
+<br />
+<br />
 <h5>Can we play when it is windy?</h5>
 <img src="../../../wind/wind.png" />
 <i>
@@ -51,7 +140,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 </i>
 
 <Title>
-  <h3>Play Theory: Learning through Play</h3>
+  <h4>Play Theory: Learning through Play</h4>
 </Title>
 <img src="../../../wind/play-experience.png" />
 <i>
@@ -71,7 +160,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 </Text>
 
 <Title>
-  <h3>Play Theory: Playful Tension</h3>
+  <h4>Play Theory: Playful Tension</h4>
 </Title>
 <img src="../../../wind/tension.png" />
 <i>The orderly and unruly of ride with wind play experience</i>
@@ -83,28 +172,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
 </Text>
 
 <Title>
-  <h3>Final Play Experience</h3>
+  <h4>Hang Glider Design</h4>
 </Title>
-<img src="../../../wind/digital-sketching.png" />
-<i>Digital sketching as the base for 3D modeling and rendering in next step</i>
-<Title>
-  <h5>Full play experience demostration</h5>
-</Title>
-<iframe
-  width="100%"
-  height="500"
-  src="https://www.youtube.com/embed/xWhQBq1fHEk"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>
-
-<Title>
-  <h3>Hang Glider</h3>
-</Title>
-<img src="../../../wind/minifigure.png" />
-<i>My rendering of the hang glider</i>
 <Text>
   It is impossible to develop the whole play experience within the time frame.
   So I focused on developing a hang glider because the flying is the key part of
@@ -143,7 +212,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 <Text>I tested various times both indoor and outdoor.</Text>
 
 <Title>
-  <h3>Demo and Feedback</h3>
+  <h4>Demo and Feedback</h4>
   <h5>With Lego designers</h5>
 </Title>
 <img src="../../../wind/demo2.jpeg" />
@@ -155,6 +224,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 </Text>
 
 <Gap margin={100} />
+</TextLayout>
 
 <hr />
 
