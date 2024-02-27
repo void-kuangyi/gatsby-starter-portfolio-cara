@@ -19,7 +19,6 @@ const ProjectCard = ({
   link,
   title,
   status,
-  individual,
   collab,
   className,
   children,
