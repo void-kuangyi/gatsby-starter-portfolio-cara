@@ -64,7 +64,7 @@ const ProjectCard = ({
           alignItems: `flex-start`,
         }}
       >
-        {status === "Coming soon" ? (
+        {status === "In Progress" ? (
           <Badge pill warning>
             {status}
           </Badge>
