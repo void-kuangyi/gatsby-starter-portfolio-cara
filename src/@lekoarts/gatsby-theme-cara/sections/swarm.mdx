@@ -18,3 +18,52 @@ import "react-alice-carousel/lib/alice-carousel.css";
   <br />
   Keywords: creative coding, concurrency and distributed systems, algorithms
 </TextLayout>
+<iframe
+  width="100%"
+  height="500"
+  src="https://www.youtube.com/embed/xYN08261-vw?si=qCJ_UpfLZUupYcxB"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../swarm/swarm2.png",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../swarm/swarm1.png",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../swarm/swarm3.png",
+      width: 3,
+      height: 1,
+    },
+  ]}
+/>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    Coordinating behaviours and resources in a concurrent and distributed way is
+    at the heart of the project. The code framework which model and simulate a
+    swarm of vehicles showing default behaviours which keep them in motion. All
+    vehicles have a local “charge” to keep them “alive”. The vehicles replenish
+    their charge to full by passing “energy globes” in close proximity. Vehicles
+    which run out of charge mysteriously disappear.
+    <br />
+    <br />
+    The overall design goal is to keep as many vehicles alive as possible for as
+    long as possible. As energy globes can only be discovered locally, communication
+    is required. Here shows how three different algorithms influence the movement
+    and the survival rate of vehicles.
+    <br />
+    <br />
+    <a href="https://github.com/void-kuangyi/Gliding-in-Space">Github</a>
+  </Text>
+</TextLayout>
