@@ -1,0 +1,73 @@
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
+import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+<TextLayout>
+  <h4>Unbox</h4>
+  <h5>
+    Unpacking, cocreating, and materialising transdisciplinary collaborative
+    processes through physical metaphors
+  </h5>
+  <br />
+  2024 <br />
+  Client:{" "}
+  <a href="https://www.unusualcollaborations.com/the-power-of-one">
+    {" "}
+    Center for Unusual Collaboration, the Netherlands
+  </a>
+  <br />
+  Role: Designer
+  <br />
+  Keywords: boardgame, transdisciplinary collaboration, metaphors
+</TextLayout>
+
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../unbox/Branding.jpeg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../unbox/closeup1.jpeg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../unbox/closeup2.jpeg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../unbox/closeup4.jpeg",
+      width: 3,
+      height: 1,
+    },
+  ]}
+/>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    A brave team of interdisciplinary scholars combine their expertise to
+    address the contemporary challenge of collaborations between practitioners,
+    researchers who too often study independently from each other. The team
+    plans to develop a gamified 'process black box' prototype to systematise and
+    translate their understanding of collaborative research processes into an
+    accessible approach that other researchers or participants can benefit from.
+    <br />
+    <br />
+    The approach is to help teams initiate and navigate complex collaborative processes,
+    designing something similar to a board game that walks participants through different
+    exercises. By using physical objects and metaphors, we promote reflective discussions
+    about important aspects of collaboration.
+    <img src="../../../unbox/storyboard.jpeg" />
+    <Annotation>Storyboard</Annotation>
+  </Text>
+</TextLayout>

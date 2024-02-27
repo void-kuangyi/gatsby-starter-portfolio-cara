@@ -3,6 +3,10 @@
   grid-row: 1 / 3;
 }
 
+.swarm {
+  
+}
+
 .flow {
   grid-column: 2;
   grid-row: 3 / span 2;

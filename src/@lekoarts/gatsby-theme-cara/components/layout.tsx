@@ -32,7 +32,6 @@ const Layout = ({ children }: LayoutProps) => (
           borderStyle: `none`,
           borderRadius: `12px`,
           maxWidth: `100%`,
-          maxHeight: `100%`,
           height: `auto`,
         },
         pre: {
