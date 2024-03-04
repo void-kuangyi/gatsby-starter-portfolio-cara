@@ -2,14 +2,74 @@ import Gap from "../elements/gap.tsx";
 import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Title from "../elements/title.tsx";
+import TextLayout from "../elements/textlayout.tsx";
 import AliceCarousel from "react-alice-carousel";
+import PhotoGallery from "../elements/gallery.tsx";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-# Play and Vulnerability
+<TextLayout>
+  <h4>Play and Vulnerability </h4>
+  <h5>An exploration of play, vulnerability and intimacy</h5>
+  <br />
+  <br />
+  2022
+  <br />
+  Collaboration: Pratt Institute, USA
+  <br />
+  Keywords: jenga, sensory ethnography research
+</TextLayout>
 
-<h5>An exploration of play, vulnerability and intimacy</h5>
+<iframe
+  width="100%"
+  height="500"
+  src="https://www.youtube.com/embed/n2KP8_oxVfw"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 
-<Gap margin={200} />
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../jenga/jenga.jpeg",
+      width: 4,
+      height: 1,
+    },
+    {
+      src: "../../../jenga/jenga0.JPG",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "../../../jenga/jenga2.JPG",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "../../../jenga/jenga3.JPG",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "../../../jenga/jenga4.JPG",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "../../../jenga/engaging.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../jenga/fellowship.jpg",
+      width: 1,
+      height: 1,
+    },
+  ]}
+></PhotoGallery>
+
+<TextLayout>
 <Title>
   <h3>Introduction</h3>
 </Title>
@@ -24,12 +84,11 @@ import "react-alice-carousel/lib/alice-carousel.css";
     baggage? Can play be used as a method to invite vulnerability more easily?
   </b>
   <br />
+  <br />
   This project collaborated with Pratt institute, New York. I was paired with a
-  communication design student from Pratt and conducted play-inspired
-  experimentations over 6 weeks. The jenga stamp experiments are predominantly
-  conducted by me.
+  communication designer and conducted play-inspired experimentations over 6
+  weeks. The jenga stamp experiments are predominantly conducted by me.
 </Text>
-
 <Title>
   <h3>Jenga Questions and Stamps</h3>
 </Title>
@@ -46,77 +105,11 @@ import "react-alice-carousel/lib/alice-carousel.css";
   through verbal communication. Direct and Interactive.
 </i>
 <Gap margin={100} />
-<img src="../../../jenga/jenga.png" />
+<img src="../../../jenga/jenga.jpeg" />
 <i>
   Jenga stamps. Focus on touch sensation, explores physical vulnerability
   through non-verbal communication. Implicit and Indirect.
 </i>
-<Gap margin={100} />
-
-<AliceCarousel
-  animationDuration="2000"
-  infinite
-  controlsStrategy="alternate"
-  autoPlay
-  mouseTracking
-  disableButtonsControls
-  items={[
-    <img
-      src="../../../jenga/jenga0.JPG"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-    <img
-      src="../../../jenga/jenga2.JPG"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-    <img
-      src="../../../jenga/jenga3.JPG"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-    <img
-      src="../../../jenga/jenga4.JPG"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-    <img
-      src="../../../jenga/jenga5.JPG"
-      onDragStart={(e) => {
-        e.preventDefault();
-      }}
-      role="presentation"
-    />,
-  ]}
-/>
-<Gap margin={100} />
-
-<Title>
-  <h3>Experiments</h3>
-</Title>
-<Text>
-  We experimented with <b>10 acquaintances, 2 strangers and 6 intimates</b>.
-  People were invited to play jenga questions or stamps.
-</Text>
-
-<iframe
-  width="100%"
-  height="500"
-  src="https://www.youtube.com/embed/n2KP8_oxVfw"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>
 
 <Title>
   <h3>Insights</h3>
@@ -194,9 +187,8 @@ We discovered existence of several phases during the experiment.
   in the school. Skin area are less exposed in a cold park than a climbing gym, which
   influence how people react to the stamping game.
 </Text>
-
+</TextLayout>
 <Gap margin={100} />
-
 <hr />
 
 ##### References:
