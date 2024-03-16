@@ -1,0 +1,90 @@
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Annotation from "../elements/annotation.tsx";
+import Title from "../elements/title.tsx";
+import Images from "../elements/images.tsx";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+
+<TextLayout>
+  <h4>Face Encoded</h4>
+  <h5>
+    A complete system for face detection and recognition with real-world photos
+  </h5>
+  <br />
+  <br />
+  2016 <br />
+  Role: Engineer
+  <br />
+  Keywords: computer vision, face recognition, variational autoencoder, viola-jones
+  detector, neural network
+</TextLayout>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../face/facedetection.jpg",
+      width: 4,
+      height: 1,
+    },
+    {
+      src: "../../../face/face2.jpg",
+      width: 4,
+      height: 1,
+    },
+    {
+      src: "../../../face/f1.jpg",
+      width: 4,
+      height: 1,
+    },
+  ]}
+/>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    We present a complete system for face detection, recognition and alignment
+    in real-world photos. <br />
+    <br /> For detection, we use the venerable Viola-Jones detector [2], while for
+    alignment, we use a heuristic algorithm [2,3] which relies on facial keypoint
+    locations extracted by applying a Viola-Jones detector to a suitably preprocessed
+    image. For recognition, we represent the face in low dimention. Finally, we get
+    the ranked results by comparing it against the database.
+    <img src="../../../face/flowchart.png" />
+    <Annotation>system flowchart</Annotation>
+    We implement three different strategies: Turk & Pentland’s Eigenfaces [1], a
+    simple method using the latent representation of a Variational Autoencoder
+    (VAE) [4, 5], and a novel VAE-like strategy which we call the IDVAE.
+    <img src="../../../face/differences.png" />
+    <Annotation>Comparison between Eigenfaces, VAE and IDVAE</Annotation>
+    <a href="https://github.com/void-kuangyi/engn4528-project-public">Github</a>
+  </Text>
+</TextLayout>
+<Gap margin={100} />
+<hr />
+
+##### References:
+
+<div>
+  [1] M. A. Turk and A. P. Pentland, “Face recognition using Eigenfaces,” in
+  CVPR, 1991.
+</div>
+<div>
+  [2] P. Viola and M. Jones, “Rapid object detection using a boosted cascade of
+  simple features,” in CVPR, 2001.
+</div>
+<div>
+  [3] G. Huang, M. Mattar, H. Lee, and E. G. Learned-Miller, “Learning to align
+  from scratch,” in NIPS, 2012.
+</div>
+<div>
+  [4] D. P. Kingma and M. Welling, “Auto-encoding variational Bayes,”
+  arXiv:1312.6114, 2013.
+</div>
+<div>
+  [5] D. J. Rezende, S. Mohamed, and D. Wierstra, “Stochastic backpropagation
+  and approximate inference in deep generative models,” arXiv:1401.4082, 2014.
+</div>
+<div></div>

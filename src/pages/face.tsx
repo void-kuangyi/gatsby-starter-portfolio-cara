@@ -1,14 +1,11 @@
 import * as React from "react";
-import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
-import Inner from "../@lekoarts/gatsby-theme-cara/elements/inner";
+import ContentLayout from "../@lekoarts/gatsby-theme-cara/components/content-layout";
 import FaceContent from "../@lekoarts/gatsby-theme-cara/sections/face";
 
 const Face = () => (
-  <Layout>
-    <Inner>
-      <FaceContent />
-    </Inner>
-  </Layout>
+  <ContentLayout>
+    <FaceContent />
+  </ContentLayout>
 );
 
 export default Face;
