@@ -1,72 +1,85 @@
-import Gap from "../elements/gap.tsx";
-import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
-import Images from "../elements/images.tsx";
 import Title from "../elements/title.tsx";
-import Annotation from "../elements/annotation.tsx";
+import Gap from "../elements/gap.tsx";
 import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-# Nebula
-
-<div style="margin-top: 20px">
+<TextLayout>
+  <h4>Nebula</h4>
   <h5>A haptic wayfinding for the visually impaired</h5>
-</div>
+  <br />
+  2021 <br />
+  IxDA Interaction awards 2022 finalist
+  <br />
+  Collaboration: <a href="https://www.simondogger.nl/">Simon Dogger</a>
+  <br />
+  Role: Designer & Software Developer
+  <br />
+  Keywords: wearable technology, e-textile, GPS, compass
+  <iframe
+    src="https://player.vimeo.com/video/665646886?h=232a30762a"
+    width="100%"
+    height="700"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</TextLayout>
 
-<div>
-  <a href="https://awards.ixda.org/entry/2022/nebula-a-haptic-wayfinding-for-the-visually-impaired/">
-    IxDA Interaction Awards 2022 finalist
-  </a>
-</div>
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../nebula/poster3.jpg",
+      width: 2,
+      height: 1,
+    },
+    {
+      src: "../../../nebula-closeup1.jpg",
+      width: 2,
+      height: 1,
+    },
+    {
+      src: "../../../nebula/electronics1.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../nebula/electronics2.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: " ../../../nebula/improvement1.jpg",
+      width: 4,
+      height: 1,
+    },
+  ]}
+/>
 
 <Gap margin={100} />
 
-<div style="display: flex">
-
-<div>
-  <img src={"../../../nebula.jpg"} />
-</div> 
-<div style="flex-basis:100%; margin-left: 40px">
-   <h3>Abstract</h3>
-    Travelling and exploring unfamiliar places is an exciting experience for sighted people. However, for the visually impaired and blind people, this experience is often more frustrating and mentally demanding than enjoyable. 
-    <br/><br/>
-    <b>By translating navigational data into haptic sensation, Nebula supports unfamiliar urban exploration for people with visual impairment.</b> It allows users to explore without constantly figuring out where they are going or from where they come. Nebula minimises the fear of getting lost and relieves mental strain by creating a haptic breadcrumb trail to ensure the wearer always gets home. 
-  </div>
-</div>
-
-<Title>
-  <h3>Introduction</h3>
-</Title>
+<TextLayout>
+<b>Introduction</b>
 <Text>
-  The World Health Organisation estimates that 253 million people worldwide
-  suffer from visual impairment, of whom about 36 million are completely blind,
-  and about 217 million suffer from moderate to severe visual impairment [Qiao
-  et al., 2021].
+  Travelling and exploring unfamiliar places is an exciting experience for
+  sighted people. However, for the visually impaired and blind people, this
+  experience is often more frustrating and mentally demanding than enjoyable.
+  <br />
+  <br />
   <b>
-    In the Netherlands, the number of visually impaired may increase by 18% to
-    367,000 in 2020 [Limburg & Keunen, 2009]
-  </b>. Although visually impaired people undergo special training to learn specific
-  navigation and orientation techniques and strategies, it has been observed that
-  30 % of them never leave their homes alone. Moreover, only a fraction of blind
-  people travel independently to unknown places [Balata et al., 2015]. Visual impairment
-  primarily restricts a person’s mobility, which significantly reduces visually impaired
-  people’s travel-related activities [Balata et al., 2015] while a survey shows that
-  more than 60% of disabled people have a strong desire to travel, and the proportion
-  of disabled people who have a desire to travel is increasing [Qiao et al., 2021].
+    By translating navigational data into haptic sensation, Nebula supports
+    unfamiliar urban exploration for people with visual impairment.
+  </b> It allows users to explore without constantly figuring out where they are
+  going or from where they come. Nebula minimises the fear of getting lost and relieves
+  mental strain by creating a haptic breadcrumb trail to ensure the wearer always
+  gets home.
 </Text>
 
 <Title>
-  <h3>Methods</h3>
-</Title>
-<Text>
-  We interviewed 7 people with visually impairment in a focus group to
-  understand the pain point. After finishing developing Nebula, we conducted
-  user testings with 5 visually impaired people, collaborating with{" "}
-  <a href="https://www.simondogger.nl/">Simon Dogger</a>.
-</Text>
-
-<Title>
-  <h3>Interaction Exploration</h3>
+  <b>Exploration</b>
 </Title>
 <img src={"../../../nebula/interaction1.jpg"} />
 <Annotation>Different ways of turnings on and off the device</Annotation>
@@ -74,17 +87,17 @@ import "react-alice-carousel/lib/alice-carousel.css";
 <Annotation>
   Different button sizes and interactions of setting a waypoint
 </Annotation>
-
-<Title>
-  <h3>Material Exploration</h3>
-</Title>
+<img src={"../../../nebula/cases.jpg"} />
+<Annotation>Trying different electronic cases</Annotation>
 <img src={"../../../nebula/samples.png"} />
 <Annotation>
   Trying out different types of fabrics and design of belts
 </Annotation>
+<img src={"../../../nebula/variations2.jpg"} />
+<Annotation>Variation of belts</Annotation>
 
 <Title>
-  <h3>Technical Design</h3>
+  <b>Technical Design</b>
 </Title>
 <Text>
   The device translates navigational data, distance and direction into vibration
@@ -106,13 +119,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
   <Annotation>Layout of vibration motors on the belt</Annotation>
 </Images>
 
-<Title>
-  <h3>Development</h3>
-</Title>
 <Images>
-  <img src={"../../../nebula/electronics1.jpg"} />
-  <img src={"../../../nebula/electronics2.jpg"} />
-  <Annotation>Electronics details</Annotation>
   <img src={"../../../nebula/making1.jpg"} />
   <Annotation>
     Sewing electronics with conductive yarn onto the fabric
@@ -121,76 +128,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
   <Annotation>
     Connecting conductive yarns through connector to the buckle
   </Annotation>
-  <img src={"../../../nebula/improvement1.jpg"} />
-  <Annotation>Improved design of connection </Annotation>
 </Images>
 
-<Title>
-  <h3>Final Product</h3>
-</Title>
-
-<Images width="80%">
-  <img src={"../../../nebula-closeup1.jpg"} />
-  <img src={"../../../nebula-closeup2.jpg"} />
-  <iframe
-    src="https://player.vimeo.com/video/665646886?h=232a30762a"
-    width="100%"
-    height="700"
-    frameborder="0"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</Images>
-
-<Title>
-  <h3>Business</h3>
-</Title>
-<h5>Interchangable belt with comfort and aesthetic lines</h5>
-<Images width="80%">
-  <img src="../../../nebula-versions.jpeg" />
-  <Annotation>
-    Comfort line focuses on wearing under the shirt and is equipped with soft
-    skin-friendly materials. Aesthetic line aims at showing wearer's aesthetic
-    expression of themselves.
-  </Annotation>
-  <img src={"../../../nebula/variations2.jpg"} />
-  <img src={"../../../nebula/variations.jpg"} />
-  <Annotation>Development of various belts</Annotation>
-</Images>
-
-<Title>
-  <h3>Demonstration</h3>
-</Title>
-<Images width="60%">
-  <img src="../../../nebula-demo2.jpeg" />
-  <Annotation>The set up</Annotation>
-  <img src="../../../nebula-demo.jpeg" />
-  <Annotation>Explaining the product</Annotation>
-</Images>
-
-<Gap margin={100} />
-
----
-
-##### References:
-
-<div>
-  Qiao, G., Zhang, J., Pabel, A., & Chen, N. (2021). Understanding the Factors
-  Influencing the Leisure Tourism Behavior of Visually Impaired Travelers: An
-  Empirical Study in China. Frontiers in Psychology, 12.
-  https://doi.org/10.3389/fpsyg.2021.684285
-</div>
-<br />
-<div>
-  Balata, J., Mikovec, Z., & Maly, I. (2015). Navigation Problems in
-  Blind-to-Blind Pedestrians Tele-assistance Navigation. Human-Computer
-  Interaction – INTERACT 2015, 89–109.
-  https://doi.org/10.1007/978-3-319-22701-6_8
-</div>
-<br />
-<div>
-  Limburg, H., & Keunen, J. E. (2009). Blindness and low vision in The
-  Netherlands from 2000 to 2020—modeling as a tool for focused intervention.
-  Ophthalmic Epidemiology, 16(6), 362–369.
-  https://doi.org/10.3109/09286580903312251
-</div>
+</TextLayout>
