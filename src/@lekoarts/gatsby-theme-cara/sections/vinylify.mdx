@@ -1,23 +1,49 @@
-import Gap from "../elements/gap.tsx";
-import Text from "../elements/text.tsx";
 import ImageText from "../elements/imagetext.tsx";
 import Title from "../elements/title.tsx";
+import Gap from "../elements/gap.tsx";
+import AliceCarousel from "react-alice-carousel";
 import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+import "react-alice-carousel/lib/alice-carousel.css";
 
-# Vinylify
+<TextLayout>
+  <h4>Vinylify</h4>
+  <h5>
+    Does reintroduction of retro tech attributes into smart devices improve the
+    experience?
+  </h5>
+  <br />
+  2021 <br />
+  Keywords: design research, vinyl, slow technology, NFC
+</TextLayout>
 
-<h5>
-  Does reintroduction of beloved features from retro tech into smart devices
-  improve the experience?
-</h5>
-<img src="../../../vinylify/vinylify2.jpg" />
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../vinylify/vinylify.jpeg",
+      width: 4,
+      height: 1,
+    },
+    {
+      src: "../../../vinylify/layout.png",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../vinylify/Render.png",
+      width: 3,
+      height: 1,
+    },
+  ]}
+/>
+
+<TextLayout>
 
 <Title>
-  <h3>Prototype</h3>
+  <b>Prototype</b>
 </Title>
-<img src="../../../vinylify/layout.png" />
-<img src="../../../vinylify/Render.png" />
-<img src="../../../vinylify/vinylify.jpeg" />
+<img src="../../../vinylify/vinylify2.jpg" />
 <Annotation>A phone cover as a portable vinyl player</Annotation>
 <img src="../../../vinylify/vinyl.jpeg" />
 <Annotation>
@@ -25,30 +51,8 @@ import Annotation from "../elements/annotation.tsx";
 </Annotation>
 
 <Title>
-  <h3>Methods</h3>
+  <b>Research Methods - Diary Study</b>
 </Title>
 <img src="../../../vinylify/user.png" />
 <Annotation>7 days diary study with participants</Annotation>
-
-<Title>
-  <h3>Results</h3>
-</Title>
-
-<Text title="Rich interaction, ownership, and rituality improves smart tech">
-  The rich interaction elements from retro vinyl player enhanced participants’
-  music experience as well as the relationship between people and product. The
-  interaction with the product indicates the beginning of a music experience,
-  and eventually turns into a ritual. The collection of albums provides people
-  sense of ownership because of the personalisation aspects in the vinyl
-  records.
-</Text>
-
-<Text title="Consider slow-tech design principles: ritual and reveal">
-  The interactive user experience of Vinylify can be linked with two important
-  slow technology design principles, Ritual and Reveal. Instead of clicking a
-  button to start listening, Vinylify requires a set of manual actions to start
-  a tangible process. Prioritising engagement over utility is one of the most
-  important aspects of slow technology, which is the also missing piece of the
-  excessively smart technology nowadays. With the simplified operation of over smart products, people lost the self-exploration part. This is a limitation of smart technology, but also an opportunity. When more elements, that provide users with a sense of engagement and rich experience, are integrated in smart products, they will be smart and give users enough opportunities for self-exploration simultaneously.
-
-</Text>
+</TextLayout>
