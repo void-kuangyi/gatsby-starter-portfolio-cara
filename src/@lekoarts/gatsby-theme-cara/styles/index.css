@@ -13,10 +13,10 @@
   grid-row: 5 / span 2;
 }
 
-.flow {
+/* .flow {
   grid-column: 2;
   grid-row: 7 / span 2;
-}
+} */
 
 .header {
   width: 100%;
